@@ -1,6 +1,6 @@
 # Readme for AnimatingComponentsIntoView
 
-This is some menu animation I’ve done to show users who tapped an icon (on a previous screen) where the different tools end up. 
+This is some menu animation I’ve done to show users who tapped an icon (on a previous screen) where the different tools end up. The icon which _explodes_ into moving pieces is in that position on the original screen, with a few other icons.
 
 Within Supernova, start the Preview on the MenuFullSizeWithOverlays screen.
 
@@ -23,6 +23,10 @@ To accomplish that, just edit the generated code looking for the `.fillMode = .r
 ## Demo of the animation
 The following is a screen capture from the 2nd screen, showing how the pieces animate down.
 
-The intent is that they don't then return to the start, as discussed above.
+The intent is that they don't then return to the start, as discussed above. That's faked in the demo by setting the Hidden property so they appear to vanish into the destination folder.
 
 ![Screen cap of the animation in preview, on on the 2nd screen](animation_demo.gif)
+
+The larger animated shows the transition from the previous menu and then the _explosion motion_ playing on entry.
+
+![Screen cap of transition from menu screen showing animation on entry](TwoScreenTransition.gif)
