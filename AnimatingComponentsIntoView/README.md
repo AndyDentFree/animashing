@@ -11,7 +11,7 @@ You will see the icon in roughly the same location on the _next screen_ fade and
 ## The Animation Techniques
 Looking at the animation inside Supernova Studio, it's mostly a combination of `Translate X` and `Translate Y` to move the pieces in an apparent curve, down to their final location. The brush also has a little bit of rotation in order to straighten it up.
 
-The vision I had in my head was like playing the old Flight Control game
+The vision I had in my head was like playing the old Flight Control game, lining up planes on a path to an airstrip. In particular, I wanted the feel of a smooth curve being followed as a _corridor in the sky_.
 
 ## Enhancing the code
 It would be preferable if the animations can leave things at the final settings rather than having them return as you see at the end of the gif.
