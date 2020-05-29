@@ -1,0 +1,11 @@
+Build
+Carthage/Checkouts
+bin
+obj
+libs
+lib
+doxygenerated
+packages
+
+xcuserdata
+*.xcworkspacedata
