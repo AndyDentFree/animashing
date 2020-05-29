@@ -1,0 +1,68 @@
+<document systemVersion="15B42" targetRuntime="iOS.CocoaTouch" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useTraitCollections="YES" useAutolayout="YES" propertyAccessControl="none" version="3.0" toolsVersion="14313.13.2" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen" />
+    </device>
+    <dependencies>
+        <plugIn version="14283.9" identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" />
+    </dependencies>
+    <objects>
+        <view id="WJO-vn-W8s" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="YES" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" key="view">
+            <color key="backgroundColor" colorSpace="calibratedRGB" red="1.0" green="1.0" blue="1.0" alpha="1.0" />
+            <rect key="frame" x="0" y="0" width="414" height="736" />
+            <constraints>
+                <constraint firstItem="MmG-5Y-SoR" firstAttribute="leading" secondItem="WJO-vn-W8s" secondAttribute="leading" constant="12" id="D1S-J9-i51" />
+                <constraint firstItem="WJO-vn-W8s" firstAttribute="trailing" secondItem="MmG-5Y-SoR" secondAttribute="trailing" constant="11" id="WR4-uV-6Yh" />
+                <constraint firstItem="WJO-vn-W8s" firstAttribute="bottom" secondItem="MmG-5Y-SoR" secondAttribute="bottom" constant="14" id="RTo-dW-Xg6" />
+            </constraints>
+            <subviews>
+                <view id="MmG-5Y-SoR" fixedFrame="NO" translatesAutoresizingMaskIntoConstraints="NO" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" customModule="iOS_Development" customModuleProvider="target" key="view">
+                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0.8745098114013672" green="0.9411764740943909" blue="0.9960784316062927" alpha="1.0" />
+                    <rect key="frame" x="12" y="625" width="391" height="97" />
+                    <constraints>
+                        <constraint firstItem="MmG-5Y-SoR" firstAttribute="height" constant="97" id="INM-Op-Hh8" />
+                        <constraint firstItem="wQs-KT-JA5" firstAttribute="leading" secondItem="MmG-5Y-SoR" secondAttribute="leading" constant="7" id="bch-Di-PoU" />
+                        <constraint firstItem="wQs-KT-JA5" firstAttribute="top" secondItem="MmG-5Y-SoR" secondAttribute="top" constant="4" id="N3m-ih-Gdh" />
+                        <constraint firstItem="MmG-5Y-SoR" firstAttribute="trailing" secondItem="VBo-oV-L5h" secondAttribute="trailing" constant="9" id="On2-8A-NW7" />
+                        <constraint firstItem="VBo-oV-L5h" firstAttribute="top" secondItem="MmG-5Y-SoR" secondAttribute="top" constant="48" id="PbA-8X-5Mf" />
+                    </constraints>
+                    <subviews>
+                        <label id="wQs-KT-JA5" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" customModule="iOS_Development" customModuleProvider="target" numberOfLines="0" horizontalHuggingPriority="251" verticalHuggingPriority="251" userInteractionEnabled="NO" adjustsFontSizeToFit="NO" baselineAdjustments="alignBaselines" textAlignment="left">
+                            <color key="backgroundColor" colorSpace="calibratedRGB" red="0.0" green="0.0" blue="0.0" alpha="0.0" />
+                            <rect key="frame" x="7" y="4" width="255" height="60" />
+                            <constraints>
+                                <constraint firstItem="wQs-KT-JA5" firstAttribute="width" constant="255" id="4Pl-ZP-0Pi" />
+                            </constraints>
+                            <string key="text">Tap or drag the bar to switch between the full-size editor and this compact menu</string>
+                            <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17" />
+                            <color key="textColor" colorSpace="calibratedRGB" red="0.37326955795288086" green="0.05373268574476242" blue="0.37638700008392334" alpha="1.0" />
+                        </label>
+                        <button id="VBo-oV-L5h" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" customModule="iOS_Development" customModuleProvider="target" customClass="SupernovaButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation">
+                            <color key="backgroundColor" colorSpace="calibratedRGB" red="0.0" green="0.0" blue="0.0" alpha="0.0" />
+                            <rect key="frame" x="274" y="48" width="108" height="40" />
+                            <constraints>
+                                <constraint firstItem="VBo-oV-L5h" firstAttribute="width" constant="108" id="m89-q2-hAh" />
+                                <constraint firstItem="VBo-oV-L5h" firstAttribute="height" constant="40" id="H0T-AG-zRe" />
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="34" />
+                            <state title="more…" key="normal">
+                                <color key="titleColor" colorSpace="calibratedRGB" red="0.03921568766236305" green="0.5176470875740051" blue="1.0" alpha="1.0" />
+                            </state>
+                            <connections>
+                                <action selector="onMoreButtonPressed:" destination="xzd-Ru-8BO" eventType="touchUpInside" id="rL9-dn-mOi" />
+                            </connections>
+                        </button>
+                    </subviews>
+                </view>
+            </subviews>
+        </view>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="xzd-Ru-8BO" userLabel="File&apos;s Owner" customModule="iOS_Development" customModuleProvider="target" customClass="ShowHelpViewController">
+            <connections>
+                <outlet property="view" destination="WJO-vn-W8s" id="8hW-z6-eEY" />
+                <outlet property="tipboxView" destination="MmG-5Y-SoR" id="U3E-kA-H2j" />
+                <outlet property="tiptextLabel" destination="wQs-KT-JA5" id="2t2-cM-XEb" />
+                <outlet property="morebuttonButton" destination="VBo-oV-L5h" id="eMM-3E-x5r" />
+            </connections>
+        </placeholder>
+    </objects>
+    <resources />
+</document>

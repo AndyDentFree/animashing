@@ -1,0 +1,21 @@
+{
+  "properties" : {
+    "template-rendering-intent" : "original"
+  },
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "composer@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "scale" : "3x",
+      "idiom" : "universal",
+      "filename" : "composer@3x.png"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

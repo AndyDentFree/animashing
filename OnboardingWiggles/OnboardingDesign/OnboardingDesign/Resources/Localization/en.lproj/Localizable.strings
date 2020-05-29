@@ -1,0 +1,19 @@
+
+
+/* ExpandedView */
+"ExpandedView.helptoolsButton" = "?";
+"ExpandedView.helpapppagemenuButton" = "?";
+"ExpandedView.helpcloseButton" = "?";
+
+
+/* ShowHelp */
+"ShowHelp.tiptextLabel" = "Tap or drag the bar to switch between the full-size editor and this compact menu";
+"ShowHelp.morebuttonButton" = "more…";
+
+
+/* MenuMockupWithArrows */
+"MenuMockupWithArrows.composerbuttonButton" = "Composer";
+"MenuMockupWithArrows.helpexpanderButton" = "?";
+"MenuMockupWithArrows.helpcomposerButton" = "?";
+"MenuMockupWithArrows.helpfavesButton" = "?";
+"MenuMockupWithArrows.helpappButton" = "?";

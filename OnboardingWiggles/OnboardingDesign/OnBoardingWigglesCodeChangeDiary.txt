@@ -1,0 +1,7 @@
+OnboardingWiggles CodeChange Diary
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Creation
+2020-05-29
+
+Generated project from Supernova Studio 8.5 with xib and Swift 5 settings.
