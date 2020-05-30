@@ -16,7 +16,6 @@
 		500F55D4E06AD77856755DFD /* NSMutableParagraphStyle+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3554ED95F12775A0218F8D11 /* NSMutableParagraphStyle+Utility.swift */; };
 		5E94F729BB72E77F8EA90691 /* MenuMockupWithArrowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460CCBAEE81AEC4C7A37539E /* MenuMockupWithArrowsViewController.swift */; };
 		64BAC1DEC5954AAC7BE260D4 /* UIImage+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C11850596173112BC428A4 /* UIImage+Utility.swift */; };
-		992A3DD9B151734B3CCC754A /* UISearchBar+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215F4069C94C516686CCD958 /* UISearchBar+Utility.swift */; };
 		B1E96C699F324BC09EB59184 /* ExpandedViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7FDB48EB579028E96933C /* ExpandedViewViewController.swift */; };
 		BE5863B802B97E459696B6AB /* SupernovaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5346B11099C5031725B5C /* SupernovaButton.swift */; };
 		BE819AF0919CE8F4DCC6ABE0 /* ShowHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FEFC287BFB27D5BB74D197 /* ShowHelpViewController.swift */; };
@@ -25,7 +24,6 @@
 		CDF1C302A75B83FA18BF1F41 /* ExpandedViewViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 2DFBC8E04E69DB7D87F76340 /* ExpandedViewViewController.xib */; };
 		EB1DE96E8D2396F95A58817D /* MenuMockupWithArrowsViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 054D2A234F00774A6E02F2A1 /* MenuMockupWithArrowsViewController.xib */; };
 		F5B6D81A703A53EE7F0F760D /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7FBCCAAB87D94B345C874C32 /* SF-Pro-Text-Regular.otf */; };
-		FA35678022DD83330C9A6C62 /* UITabBarController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9329DF6338B518E9C6634962 /* UITabBarController+Utility.swift */; };
 		FE96A4082A4FA7E69264B012 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F851459AA610EE0AA87AA824 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +32,6 @@
 		0AEAB55A2A7DC058590A3698 /* UILabel+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Utility.swift"; sourceTree = "<group>"; };
 		0B6093BE1E68BCDD00C80262 /* OnboardingDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C11850596173112BC428A4 /* UIImage+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Utility.swift"; sourceTree = "<group>"; };
-		215F4069C94C516686CCD958 /* UISearchBar+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Utility.swift"; sourceTree = "<group>"; };
 		2DFBC8E04E69DB7D87F76340 /* ExpandedViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandedViewViewController.xib; sourceTree = "<group>"; };
 		3554ED95F12775A0218F8D11 /* NSMutableParagraphStyle+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableParagraphStyle+Utility.swift"; sourceTree = "<group>"; };
 		460CCBAEE81AEC4C7A37539E /* MenuMockupWithArrowsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuMockupWithArrowsViewController.swift; sourceTree = "<group>"; };
@@ -45,7 +42,6 @@
 		78628C0ADABD8048022222E2 /* SF-Compact-Text-Regular.otf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.font; path = "SF-Compact-Text-Regular.otf"; sourceTree = "<group>"; };
 		7FBCCAAB87D94B345C874C32 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.font; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		8A20BF2278E49D89203C78D4 /* UINavigationController+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Utility.swift"; sourceTree = "<group>"; };
-		9329DF6338B518E9C6634962 /* UITabBarController+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Utility.swift"; sourceTree = "<group>"; };
 		99FEFC287BFB27D5BB74D197 /* ShowHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowHelpViewController.swift; sourceTree = "<group>"; };
 		AB0FD64FB6DAFA359C8B36BD /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.font; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
 		C6F5346B11099C5031725B5C /* SupernovaButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupernovaButton.swift; sourceTree = "<group>"; };
@@ -179,8 +175,6 @@
 				16C11850596173112BC428A4 /* UIImage+Utility.swift */,
 				0AEAB55A2A7DC058590A3698 /* UILabel+Utility.swift */,
 				8A20BF2278E49D89203C78D4 /* UINavigationController+Utility.swift */,
-				215F4069C94C516686CCD958 /* UISearchBar+Utility.swift */,
-				9329DF6338B518E9C6634962 /* UITabBarController+Utility.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -289,7 +283,6 @@
 			files = (
 				403D210C605404B8D55A93F9 /* ShowHelpViewController.xib in Sources */,
 				BE5863B802B97E459696B6AB /* SupernovaButton.swift in Sources */,
-				FA35678022DD83330C9A6C62 /* UITabBarController+Utility.swift in Sources */,
 				CDF1C302A75B83FA18BF1F41 /* ExpandedViewViewController.xib in Sources */,
 				BE819AF0919CE8F4DCC6ABE0 /* ShowHelpViewController.swift in Sources */,
 				500F55D4E06AD77856755DFD /* NSMutableParagraphStyle+Utility.swift in Sources */,
@@ -299,7 +292,6 @@
 				B1E96C699F324BC09EB59184 /* ExpandedViewViewController.swift in Sources */,
 				C08B3F2DB83AE6C1926969A5 /* UINavigationController+Utility.swift in Sources */,
 				30CD081D7D60BAB4C54C0754 /* AppDelegate.swift in Sources */,
-				992A3DD9B151734B3CCC754A /* UISearchBar+Utility.swift in Sources */,
 				EB1DE96E8D2396F95A58817D /* MenuMockupWithArrowsViewController.xib in Sources */,
 				C4B56BF0FC4716EDF8ECEA41 /* UILabel+Utility.swift in Sources */,
 				5E94F729BB72E77F8EA90691 /* MenuMockupWithArrowsViewController.swift in Sources */,
