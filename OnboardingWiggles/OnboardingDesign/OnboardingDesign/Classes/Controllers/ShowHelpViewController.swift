@@ -14,8 +14,8 @@ import UIKit
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 // MARK: - Implementation
 
+/// Note: HelpInvoker protocol extension knows this class details & directly access properties & outlets
 class ShowHelpViewController: UIViewController {
-
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
     // MARK: - Properties
@@ -24,8 +24,16 @@ class ShowHelpViewController: UIViewController {
     @IBOutlet weak var tiptextLabel: UILabel!
     @IBOutlet weak var morebuttonButton: SupernovaButton!
 
-    private var customTransitioningDelegate = TransitioningDelegate()
+    // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    // MARK: - HelpInvoker properties
+    public var invokedBy: HelpInvoker? = nil
+    public var helpMsg: String? = nil
+    public var moreUrl: URL? = nil
+    public static var urlLauncher: ((URL) -> Void)? = nil // abstract this a bit because some environments need indirection
 
+    // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    // MARK: - Support for fancy transitions
+    private var customTransitioningDelegate = TransitioningDelegate()
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         configureTransition()
@@ -67,7 +75,7 @@ class ShowHelpViewController: UIViewController {
     }
 
     private func setupComponents()  {
-       
+  /*
         // Setup tiptextLabel
         let tiptextLabelAttrString = NSMutableAttributedString(string: "Tap or drag the bar to switch between the full-size editor and this compact menu", attributes: [
             .font : UIFont(name: "SFCompactText-Regular", size: 17)!,
@@ -76,6 +84,8 @@ class ShowHelpViewController: UIViewController {
             .paragraphStyle : NSMutableParagraphStyle(alignment: .left, lineHeight: nil, paragraphSpacing: 1)
         ])
         self.tiptextLabel.attributedText = tiptextLabelAttrString
+        */
+        self.tiptextLabel.text = helpMsg
         
         // Setup morebuttonButton
         self.morebuttonButton.snImageTextSpacing = 10
@@ -89,7 +99,9 @@ class ShowHelpViewController: UIViewController {
     }
 
     private func setupGestureRecognizers()  {
-    
+        let exitOnTap = UITapGestureRecognizer(target: self, action: #selector(self.handleTapLabel(_:)))
+        tiptextLabel.addGestureRecognizer(exitOnTap)
+        tipboxView.addGestureRecognizer(exitOnTap)
     }
 
     private func setupLocalization()  {
@@ -113,12 +125,16 @@ class ShowHelpViewController: UIViewController {
     // MARK: - Actions
 
     @IBAction public func onMoreButtonPressed(_ sender: UIButton)  {
-        // quick hack for testing - put "Back" logic in here
-        // Pop the navigation stack or dismiss the modal presentation
-        if let navigationController = self.navigationController, navigationController.viewControllers.first != self {
-            navigationController.popViewController(animated: true)
-        } else if self.presentingViewController != nil {
+        invokedBy?.morePressed = true  // flag should cause completion routine to do something interesting
+        if let url = self.moreUrl, let launcher = ShowHelpViewController.urlLauncher {
+            self.dismiss(animated: true, completion: { launcher(url) })
+        } else {
             self.dismiss(animated: true, completion: nil)
         }
+    }
+
+    @objc private func handleTapLabel(_ sender: UITapGestureRecognizer) {
+        invokedBy?.morePressed = false
+        self.dismiss(animated: true, completion: nil)
     }
 }

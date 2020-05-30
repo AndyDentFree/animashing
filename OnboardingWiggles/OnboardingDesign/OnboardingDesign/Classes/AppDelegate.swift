@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
-        
+        ShowHelpViewController.urlLauncher = {UIApplication.shared.open($0, options: [:], completionHandler: nil)}
     }
 
     public func applicationWillResignActive(_ application: UIApplication)  {

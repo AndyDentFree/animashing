@@ -15,8 +15,7 @@ import UIKit
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 // MARK: - Implementation
 
-class ExpandedViewViewController: UIViewController {
-
+class ExpandedViewViewController: UIViewController, HelpInvoker {
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
     // MARK: - Properties
@@ -25,6 +24,7 @@ class ExpandedViewViewController: UIViewController {
     @IBOutlet weak var helpapppagemenuButton: SupernovaButton!
     @IBOutlet weak var tiparrowtocloseImageView: UIImageView!
     @IBOutlet weak var helpcloseButton: SupernovaButton!
+    var morePressed: Bool = false  // satisfies HelpInvoker
 
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
@@ -104,9 +104,8 @@ class ExpandedViewViewController: UIViewController {
     }
 
     @IBAction public func onHelpClosePressed(_ sender: UIButton)  {
-        let destination = ShowHelpViewController(nibName: "ShowHelpViewController", bundle: nil)
-        self.present(destination, animated: true, completion: nil)
-        //self.navigationController?.pushViewController(destination, animated: true)
+        showHelp(msg:"Roses are red, violets are cyan, if you don't like my verse then you're probably cryin", 
+                url:"https://github.com/AndyDentFree/animashing")
     }
 
 

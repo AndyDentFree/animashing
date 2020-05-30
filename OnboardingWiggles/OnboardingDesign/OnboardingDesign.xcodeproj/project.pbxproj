@@ -19,6 +19,7 @@
 		C08B3F2DB83AE6C1926969A5 /* UINavigationController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A20BF2278E49D89203C78D4 /* UINavigationController+Utility.swift */; };
 		C4B56BF0FC4716EDF8ECEA41 /* UILabel+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEAB55A2A7DC058590A3698 /* UILabel+Utility.swift */; };
 		C8BC236FA206C15DDA7FFF8A /* MenuMockupWithArrowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BC260C1E14C9390D8BEB0E /* MenuMockupWithArrowsViewController.swift */; };
+		C8BC239F0D2F3BFE7FB24A7C /* HelpInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BC252BF027C425616810BC /* HelpInvoker.swift */; };
 		C8BC245F5D3BA4C7F5DC37BF /* ExpandedViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BC23E0983120BE94E505E0 /* ExpandedViewViewController.swift */; };
 		C8BC27F3919126F57DDE42B9 /* ShowHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BC23B210B3998247A300B2 /* ShowHelpViewController.swift */; };
 		C8BC2886E16EA37D0EBB59BA /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BC268FC3095D2EF2A92076 /* PresentationController.swift */; };
@@ -45,6 +46,7 @@
 		C6F5346B11099C5031725B5C /* SupernovaButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupernovaButton.swift; sourceTree = "<group>"; };
 		C8BC23B210B3998247A300B2 /* ShowHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowHelpViewController.swift; sourceTree = "<group>"; };
 		C8BC23E0983120BE94E505E0 /* ExpandedViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandedViewViewController.swift; sourceTree = "<group>"; };
+		C8BC252BF027C425616810BC /* HelpInvoker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpInvoker.swift; sourceTree = "<group>"; };
 		C8BC260C1E14C9390D8BEB0E /* MenuMockupWithArrowsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuMockupWithArrowsViewController.swift; sourceTree = "<group>"; };
 		C8BC268FC3095D2EF2A92076 /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
 		EACA491446EBCFB18C72FF2B /* SupernovaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupernovaTextField.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				C8BC260C1E14C9390D8BEB0E /* MenuMockupWithArrowsViewController.swift */,
 				C8BC23B210B3998247A300B2 /* ShowHelpViewController.swift */,
 				C8BC268FC3095D2EF2A92076 /* PresentationController.swift */,
+				C8BC252BF027C425616810BC /* HelpInvoker.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				C8BC236FA206C15DDA7FFF8A /* MenuMockupWithArrowsViewController.swift in Sources */,
 				C8BC27F3919126F57DDE42B9 /* ShowHelpViewController.swift in Sources */,
 				C8BC2886E16EA37D0EBB59BA /* PresentationController.swift in Sources */,
+				C8BC239F0D2F3BFE7FB24A7C /* HelpInvoker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

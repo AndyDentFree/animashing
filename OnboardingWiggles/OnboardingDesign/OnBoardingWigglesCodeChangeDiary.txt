@@ -6,7 +6,6 @@ Creation
 
 Generated project from Supernova Studio 8.5 with xib and Swift 5 settings.
 
-
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 Cleanup Help layout & add blur with animation to show Help as modal
 2020-05-30
@@ -33,3 +32,27 @@ ShowHelpViewcontroller.swift
 PresentationController.swift
 - added to do custom modal embedding with transition animation
 - also contains little helper class TransitioningDelegate
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Parameterise help, making label tappable & refactor out to protocol
+2020-05-30
+
+HelpInvoker.swift
+- protocol added
+
+ExpandedViewViewController
+- made a HelpInvoker
+- added morePressed property
+- onHelpClosePressed - use showHelp
+
+ShowHelpViewcontroller.swift
+- added invokedBy, helpMsg & moreUrl properties
+- added urlLauncher static property
+- setupComponents use helpMsg 
+- onMoreButtonPressed - set morePressed
+- handleTapLabel added
+- setupGestureRecognizers - add tap on tiptextLabel & tipboxview
+
+
+AppDelegate.swift
+- applicationDidFinishLaunching init ShowHelpViewController.urlLauncher
