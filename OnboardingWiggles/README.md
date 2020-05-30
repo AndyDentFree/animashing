@@ -28,8 +28,14 @@ As you can see in the timeline, it has a diagonal movement, by adjusting X and Y
 
 Code was generated using the xib style for UI with Swift 5, from Supernova Studio v8.5.
 
-See the file `./OnBoardingDesign/OnBoardingWigglesCodeChangeDiary.txt` for details of manual changes.
+See the file `./OnBoardingDesign/OnBoardingWigglesCodeChangeDiary.txt` for details of changes after code generation.
 
+## Playing the Demo
+
+- The demo starts with a mock screen with the Composer button below being live. 
+- Pressing Composer shows a mock expanded _document_ screen
+- Pressing the Help button for the top-right help will trigger a modal overlay of the help screen
+- The More button on the Help overlay dismisses it
 
 [AS]: https://apps.apple.com/us/app/touchgram-for-imessage/id1447336478#?platform=messages
 [TG]: https://www.touchgram.com/

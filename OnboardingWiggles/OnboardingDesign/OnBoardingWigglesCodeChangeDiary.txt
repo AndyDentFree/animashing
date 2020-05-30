@@ -8,12 +8,28 @@ Generated project from Supernova Studio 8.5 with xib and Swift 5 settings.
 
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-Cleanup Help layout & add blur
+Cleanup Help layout & add blur with animation to show Help as modal
 2020-05-30
 
+Cleaned up folder structure from generation, moving Controllers up out of sub-folders
+(this was a mistake in export settings)
+
+ExpandedViewViewController.swift
+- onHelpClosePressed change from push to modal present to show help
+
 ShowHelpViewcontroller.xib
-- added OverallBlur view and moved TipBackground inside it
-- set TipBackground auto-layout centred in blur, -24 width and 12 from bottom, anchored to bottom
+- adjusted TipBackground auto-layout to take up all of the view (expecting to be nested in small view)
 - changed font of More... button to standard Label font
 - renamed main label TipLabel & set contraints so takes up most of TipBackground, sized to leave room for the button but expanding on different width screens
 - TipMsg set InteractionEnabled
+
+ShowHelpViewcontroller.swift
+- customTransitioningDelegate added
+- init overrides added to call configureTransition
+- configureTransition added
+- setupComponents - remove the generated code setting a border color as the dimming background blur is a much better effect
+- onMoreButtonPressed - put a testing hack in to dismiss the controller
+
+PresentationController.swift
+- added to do custom modal embedding with transition animation
+- also contains little helper class TransitioningDelegate

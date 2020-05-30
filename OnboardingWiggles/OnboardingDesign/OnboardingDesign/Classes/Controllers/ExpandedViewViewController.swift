@@ -105,7 +105,8 @@ class ExpandedViewViewController: UIViewController {
 
     @IBAction public func onHelpClosePressed(_ sender: UIButton)  {
         let destination = ShowHelpViewController(nibName: "ShowHelpViewController", bundle: nil)
-        self.navigationController?.pushViewController(destination, animated: true)
+        self.present(destination, animated: true, completion: nil)
+        //self.navigationController?.pushViewController(destination, animated: true)
     }
 
 

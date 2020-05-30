@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="ipad10_5" orientation="portrait" layout="splitview1_3" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -14,65 +14,49 @@
     </customFonts>
     <objects>
         <view opaque="NO" contentMode="scaleToFill" id="WJO-vn-W8s">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="1112"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OkN-KN-BVQ" userLabel="OverallBlur">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="1112"/>
-                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="g7n-pN-CCZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1112"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MmG-5Y-SoR" userLabel="TipBackground">
-                                <rect key="frame" x="12" y="1000" width="296" height="100"/>
-                                <subviews>
-                                    <label opaque="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap or drag the bar to switch between the full-size editor and this compact menu" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQs-KT-JA5" userLabel="TipMsg">
-                                        <rect key="frame" x="8" y="4" width="226.5" height="96"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
-                                        <color key="textColor" red="0.37326955795288086" green="0.053732685744762421" blue="0.37638700008392334" alpha="1" colorSpace="calibratedRGB"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="800" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBo-oV-L5h" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
-                                        <rect key="frame" x="242.5" y="60" width="49.5" height="40"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="H0T-AG-zRe"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="ioy-mD-7H5"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="more…"/>
-                                        <connections>
-                                            <action selector="onMoreButtonPressed:" destination="xzd-Ru-8BO" eventType="touchUpInside" id="rL9-dn-mOi"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.87450981140136719" green="0.94117647409439087" blue="0.99607843160629272" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="INM-Op-Hh8"/>
-                                    <constraint firstItem="wQs-KT-JA5" firstAttribute="top" secondItem="MmG-5Y-SoR" secondAttribute="top" constant="4" id="N3m-ih-Gdh"/>
-                                    <constraint firstAttribute="bottom" secondItem="wQs-KT-JA5" secondAttribute="bottom" id="OOa-5C-S2c"/>
-                                    <constraint firstAttribute="trailing" secondItem="VBo-oV-L5h" secondAttribute="trailing" constant="4" id="On2-8A-NW7"/>
-                                    <constraint firstItem="VBo-oV-L5h" firstAttribute="leading" secondItem="wQs-KT-JA5" secondAttribute="trailing" constant="8" id="PBt-dp-Jty"/>
-                                    <constraint firstItem="VBo-oV-L5h" firstAttribute="bottom" secondItem="MmG-5Y-SoR" secondAttribute="bottom" id="PbA-8X-5Mf"/>
-                                    <constraint firstItem="wQs-KT-JA5" firstAttribute="leading" secondItem="MmG-5Y-SoR" secondAttribute="leading" constant="8" id="bch-Di-PoU"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="MmG-5Y-SoR" firstAttribute="centerX" secondItem="g7n-pN-CCZ" secondAttribute="centerX" id="ji5-Uz-Wsu"/>
-                            <constraint firstAttribute="bottom" secondItem="MmG-5Y-SoR" secondAttribute="bottom" constant="12" id="mhx-ds-8pI"/>
-                            <constraint firstItem="MmG-5Y-SoR" firstAttribute="width" secondItem="g7n-pN-CCZ" secondAttribute="width" constant="-24" id="xEa-1s-6bs"/>
-                        </constraints>
-                    </view>
-                    <blurEffect style="regular"/>
-                </visualEffectView>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MmG-5Y-SoR" userLabel="TipBackground">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <label opaque="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap or drag the bar to switch between the full-size editor and this compact menu" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQs-KT-JA5" userLabel="TipMsg">
+                            <rect key="frame" x="8" y="4" width="327" height="732"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                            <color key="textColor" red="0.37326955795288086" green="0.053732685744762421" blue="0.37638700008392334" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="800" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBo-oV-L5h" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
+                            <rect key="frame" x="343" y="696" width="67" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="H0T-AG-zRe"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="ioy-mD-7H5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="more…"/>
+                            <connections>
+                                <action selector="onMoreButtonPressed:" destination="xzd-Ru-8BO" eventType="touchUpInside" id="rL9-dn-mOi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.87450981140136719" green="0.94117647409439087" blue="0.99607843160629272" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="wQs-KT-JA5" firstAttribute="top" secondItem="MmG-5Y-SoR" secondAttribute="top" constant="4" id="N3m-ih-Gdh"/>
+                        <constraint firstAttribute="bottom" secondItem="wQs-KT-JA5" secondAttribute="bottom" id="OOa-5C-S2c"/>
+                        <constraint firstAttribute="trailing" secondItem="VBo-oV-L5h" secondAttribute="trailing" constant="4" id="On2-8A-NW7"/>
+                        <constraint firstItem="VBo-oV-L5h" firstAttribute="leading" secondItem="wQs-KT-JA5" secondAttribute="trailing" constant="8" id="PBt-dp-Jty"/>
+                        <constraint firstItem="VBo-oV-L5h" firstAttribute="bottom" secondItem="MmG-5Y-SoR" secondAttribute="bottom" id="PbA-8X-5Mf"/>
+                        <constraint firstItem="wQs-KT-JA5" firstAttribute="leading" secondItem="MmG-5Y-SoR" secondAttribute="leading" constant="8" id="bch-Di-PoU"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="OkN-KN-BVQ" firstAttribute="top" secondItem="Tyc-VA-iXv" secondAttribute="top" id="BWh-Mc-jtH"/>
-                <constraint firstItem="OkN-KN-BVQ" firstAttribute="height" secondItem="Tyc-VA-iXv" secondAttribute="height" id="Kli-Xz-ylG"/>
-                <constraint firstItem="OkN-KN-BVQ" firstAttribute="leading" secondItem="Tyc-VA-iXv" secondAttribute="leading" id="SFc-Qy-lZZ"/>
-                <constraint firstItem="OkN-KN-BVQ" firstAttribute="width" secondItem="Tyc-VA-iXv" secondAttribute="width" id="wJM-Yk-ctx"/>
+                <constraint firstItem="MmG-5Y-SoR" firstAttribute="width" secondItem="Tyc-VA-iXv" secondAttribute="width" id="19Y-Kc-MZF"/>
+                <constraint firstItem="MmG-5Y-SoR" firstAttribute="centerY" secondItem="Tyc-VA-iXv" secondAttribute="centerY" id="3Dq-Kt-wlg"/>
+                <constraint firstItem="MmG-5Y-SoR" firstAttribute="centerX" secondItem="Tyc-VA-iXv" secondAttribute="centerX" id="829-HS-gY6"/>
+                <constraint firstItem="MmG-5Y-SoR" firstAttribute="height" secondItem="Tyc-VA-iXv" secondAttribute="height" id="B6c-W1-24k"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Tyc-VA-iXv"/>
             <point key="canvasLocation" x="140" y="153.37331334332833"/>

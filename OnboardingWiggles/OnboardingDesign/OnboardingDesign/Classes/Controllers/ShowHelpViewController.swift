@@ -6,13 +6,12 @@
 //  Copyright © 2018 Aussie Designed Software Pty Ltd. All rights reserved.
 //
 
+
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 // MARK: - Import
 
 import UIKit
-
-
-// --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
+// --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 // MARK: - Implementation
 
 class ShowHelpViewController: UIViewController {
@@ -25,6 +24,17 @@ class ShowHelpViewController: UIViewController {
     @IBOutlet weak var tiptextLabel: UILabel!
     @IBOutlet weak var morebuttonButton: SupernovaButton!
 
+    private var customTransitioningDelegate = TransitioningDelegate()
+
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        configureTransition()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        configureTransition()
+    }
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
     // MARK: - Lifecycle
@@ -50,12 +60,14 @@ class ShowHelpViewController: UIViewController {
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
     // MARK: - Setup
 
+    private func configureTransition() {
+        modalPresentationStyle = .custom
+        modalTransitionStyle = .crossDissolve              // use whatever transition you want
+        transitioningDelegate = customTransitioningDelegate
+    }
+
     private func setupComponents()  {
-        // Setup tipboxView
-        self.tipboxView.layer.borderColor = UIColor(red: 0.878, green: 0.236, blue: 0.849, alpha: 1).cgColor /* #E03CD8 */
-        self.tipboxView.layer.borderWidth = 4
-        
-        
+       
         // Setup tiptextLabel
         let tiptextLabelAttrString = NSMutableAttributedString(string: "Tap or drag the bar to switch between the full-size editor and this compact menu", attributes: [
             .font : UIFont(name: "SFCompactText-Regular", size: 17)!,
@@ -101,6 +113,12 @@ class ShowHelpViewController: UIViewController {
     // MARK: - Actions
 
     @IBAction public func onMoreButtonPressed(_ sender: UIButton)  {
-    
+        // quick hack for testing - put "Back" logic in here
+        // Pop the navigation stack or dismiss the modal presentation
+        if let navigationController = self.navigationController, navigationController.viewControllers.first != self {
+            navigationController.popViewController(animated: true)
+        } else if self.presentingViewController != nil {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
 }
