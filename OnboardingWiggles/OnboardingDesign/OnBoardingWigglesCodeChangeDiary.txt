@@ -5,3 +5,15 @@ Creation
 2020-05-29
 
 Generated project from Supernova Studio 8.5 with xib and Swift 5 settings.
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Cleanup Help layout & add blur
+2020-05-30
+
+ShowHelpViewcontroller.xib
+- added OverallBlur view and moved TipBackground inside it
+- set TipBackground auto-layout centred in blur, -24 width and 12 from bottom, anchored to bottom
+- changed font of More... button to standard Label font
+- renamed main label TipLabel & set contraints so takes up most of TipBackground, sized to leave room for the button but expanding on different width screens
+- TipMsg set InteractionEnabled

@@ -1,68 +1,90 @@
-<document systemVersion="15B42" targetRuntime="iOS.CocoaTouch" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useTraitCollections="YES" useAutolayout="YES" propertyAccessControl="none" version="3.0" toolsVersion="14313.13.2" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen" />
-    </device>
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_5" orientation="portrait" layout="splitview1_3" appearance="light"/>
     <dependencies>
-        <plugIn version="14283.9" identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" />
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Compact-Text-Regular.otf">
+            <string>SFCompactText-Regular</string>
+        </array>
+    </customFonts>
     <objects>
-        <view id="WJO-vn-W8s" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="YES" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" key="view">
-            <color key="backgroundColor" colorSpace="calibratedRGB" red="1.0" green="1.0" blue="1.0" alpha="1.0" />
-            <rect key="frame" x="0" y="0" width="414" height="736" />
-            <constraints>
-                <constraint firstItem="MmG-5Y-SoR" firstAttribute="leading" secondItem="WJO-vn-W8s" secondAttribute="leading" constant="12" id="D1S-J9-i51" />
-                <constraint firstItem="WJO-vn-W8s" firstAttribute="trailing" secondItem="MmG-5Y-SoR" secondAttribute="trailing" constant="11" id="WR4-uV-6Yh" />
-                <constraint firstItem="WJO-vn-W8s" firstAttribute="bottom" secondItem="MmG-5Y-SoR" secondAttribute="bottom" constant="14" id="RTo-dW-Xg6" />
-            </constraints>
+        <view opaque="NO" contentMode="scaleToFill" id="WJO-vn-W8s">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="1112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view id="MmG-5Y-SoR" fixedFrame="NO" translatesAutoresizingMaskIntoConstraints="NO" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" customModule="iOS_Development" customModuleProvider="target" key="view">
-                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0.8745098114013672" green="0.9411764740943909" blue="0.9960784316062927" alpha="1.0" />
-                    <rect key="frame" x="12" y="625" width="391" height="97" />
-                    <constraints>
-                        <constraint firstItem="MmG-5Y-SoR" firstAttribute="height" constant="97" id="INM-Op-Hh8" />
-                        <constraint firstItem="wQs-KT-JA5" firstAttribute="leading" secondItem="MmG-5Y-SoR" secondAttribute="leading" constant="7" id="bch-Di-PoU" />
-                        <constraint firstItem="wQs-KT-JA5" firstAttribute="top" secondItem="MmG-5Y-SoR" secondAttribute="top" constant="4" id="N3m-ih-Gdh" />
-                        <constraint firstItem="MmG-5Y-SoR" firstAttribute="trailing" secondItem="VBo-oV-L5h" secondAttribute="trailing" constant="9" id="On2-8A-NW7" />
-                        <constraint firstItem="VBo-oV-L5h" firstAttribute="top" secondItem="MmG-5Y-SoR" secondAttribute="top" constant="48" id="PbA-8X-5Mf" />
-                    </constraints>
-                    <subviews>
-                        <label id="wQs-KT-JA5" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" customModule="iOS_Development" customModuleProvider="target" numberOfLines="0" horizontalHuggingPriority="251" verticalHuggingPriority="251" userInteractionEnabled="NO" adjustsFontSizeToFit="NO" baselineAdjustments="alignBaselines" textAlignment="left">
-                            <color key="backgroundColor" colorSpace="calibratedRGB" red="0.0" green="0.0" blue="0.0" alpha="0.0" />
-                            <rect key="frame" x="7" y="4" width="255" height="60" />
-                            <constraints>
-                                <constraint firstItem="wQs-KT-JA5" firstAttribute="width" constant="255" id="4Pl-ZP-0Pi" />
-                            </constraints>
-                            <string key="text">Tap or drag the bar to switch between the full-size editor and this compact menu</string>
-                            <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17" />
-                            <color key="textColor" colorSpace="calibratedRGB" red="0.37326955795288086" green="0.05373268574476242" blue="0.37638700008392334" alpha="1.0" />
-                        </label>
-                        <button id="VBo-oV-L5h" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" customModule="iOS_Development" customModuleProvider="target" customClass="SupernovaButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation">
-                            <color key="backgroundColor" colorSpace="calibratedRGB" red="0.0" green="0.0" blue="0.0" alpha="0.0" />
-                            <rect key="frame" x="274" y="48" width="108" height="40" />
-                            <constraints>
-                                <constraint firstItem="VBo-oV-L5h" firstAttribute="width" constant="108" id="m89-q2-hAh" />
-                                <constraint firstItem="VBo-oV-L5h" firstAttribute="height" constant="40" id="H0T-AG-zRe" />
-                            </constraints>
-                            <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="34" />
-                            <state title="more…" key="normal">
-                                <color key="titleColor" colorSpace="calibratedRGB" red="0.03921568766236305" green="0.5176470875740051" blue="1.0" alpha="1.0" />
-                            </state>
-                            <connections>
-                                <action selector="onMoreButtonPressed:" destination="xzd-Ru-8BO" eventType="touchUpInside" id="rL9-dn-mOi" />
-                            </connections>
-                        </button>
-                    </subviews>
-                </view>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OkN-KN-BVQ" userLabel="OverallBlur">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1112"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="g7n-pN-CCZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MmG-5Y-SoR" userLabel="TipBackground">
+                                <rect key="frame" x="12" y="1000" width="296" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap or drag the bar to switch between the full-size editor and this compact menu" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQs-KT-JA5" userLabel="TipMsg">
+                                        <rect key="frame" x="8" y="4" width="226.5" height="96"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="SFCompactText-Regular" family="SF Compact Text" pointSize="17"/>
+                                        <color key="textColor" red="0.37326955795288086" green="0.053732685744762421" blue="0.37638700008392334" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="800" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBo-oV-L5h" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
+                                        <rect key="frame" x="242.5" y="60" width="49.5" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="H0T-AG-zRe"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="ioy-mD-7H5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="more…"/>
+                                        <connections>
+                                            <action selector="onMoreButtonPressed:" destination="xzd-Ru-8BO" eventType="touchUpInside" id="rL9-dn-mOi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87450981140136719" green="0.94117647409439087" blue="0.99607843160629272" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="INM-Op-Hh8"/>
+                                    <constraint firstItem="wQs-KT-JA5" firstAttribute="top" secondItem="MmG-5Y-SoR" secondAttribute="top" constant="4" id="N3m-ih-Gdh"/>
+                                    <constraint firstAttribute="bottom" secondItem="wQs-KT-JA5" secondAttribute="bottom" id="OOa-5C-S2c"/>
+                                    <constraint firstAttribute="trailing" secondItem="VBo-oV-L5h" secondAttribute="trailing" constant="4" id="On2-8A-NW7"/>
+                                    <constraint firstItem="VBo-oV-L5h" firstAttribute="leading" secondItem="wQs-KT-JA5" secondAttribute="trailing" constant="8" id="PBt-dp-Jty"/>
+                                    <constraint firstItem="VBo-oV-L5h" firstAttribute="bottom" secondItem="MmG-5Y-SoR" secondAttribute="bottom" id="PbA-8X-5Mf"/>
+                                    <constraint firstItem="wQs-KT-JA5" firstAttribute="leading" secondItem="MmG-5Y-SoR" secondAttribute="leading" constant="8" id="bch-Di-PoU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="MmG-5Y-SoR" firstAttribute="centerX" secondItem="g7n-pN-CCZ" secondAttribute="centerX" id="ji5-Uz-Wsu"/>
+                            <constraint firstAttribute="bottom" secondItem="MmG-5Y-SoR" secondAttribute="bottom" constant="12" id="mhx-ds-8pI"/>
+                            <constraint firstItem="MmG-5Y-SoR" firstAttribute="width" secondItem="g7n-pN-CCZ" secondAttribute="width" constant="-24" id="xEa-1s-6bs"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
             </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="OkN-KN-BVQ" firstAttribute="top" secondItem="Tyc-VA-iXv" secondAttribute="top" id="BWh-Mc-jtH"/>
+                <constraint firstItem="OkN-KN-BVQ" firstAttribute="height" secondItem="Tyc-VA-iXv" secondAttribute="height" id="Kli-Xz-ylG"/>
+                <constraint firstItem="OkN-KN-BVQ" firstAttribute="leading" secondItem="Tyc-VA-iXv" secondAttribute="leading" id="SFc-Qy-lZZ"/>
+                <constraint firstItem="OkN-KN-BVQ" firstAttribute="width" secondItem="Tyc-VA-iXv" secondAttribute="width" id="wJM-Yk-ctx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Tyc-VA-iXv"/>
+            <point key="canvasLocation" x="140" y="153.37331334332833"/>
         </view>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="xzd-Ru-8BO" userLabel="File&apos;s Owner" customModule="iOS_Development" customModuleProvider="target" customClass="ShowHelpViewController">
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="xzd-Ru-8BO" userLabel="File's Owner" customClass="ShowHelpViewController" customModule="OnboardingDesign" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="WJO-vn-W8s" id="8hW-z6-eEY" />
-                <outlet property="tipboxView" destination="MmG-5Y-SoR" id="U3E-kA-H2j" />
-                <outlet property="tiptextLabel" destination="wQs-KT-JA5" id="2t2-cM-XEb" />
-                <outlet property="morebuttonButton" destination="VBo-oV-L5h" id="eMM-3E-x5r" />
+                <outlet property="morebuttonButton" destination="VBo-oV-L5h" id="eMM-3E-x5r"/>
+                <outlet property="tipboxView" destination="MmG-5Y-SoR" id="U3E-kA-H2j"/>
+                <outlet property="tiptextLabel" destination="wQs-KT-JA5" id="2t2-cM-XEb"/>
+                <outlet property="view" destination="WJO-vn-W8s" id="8hW-z6-eEY"/>
             </connections>
         </placeholder>
     </objects>
-    <resources />
 </document>
