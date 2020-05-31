@@ -15,7 +15,7 @@ import UIKit
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 // MARK: - Implementation
 
-class ExpandedViewViewController: UIViewController, HelpInvoker {
+class ExpandedViewViewController: UIViewController, HelpInvoker {   
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
     // MARK: - Properties
@@ -24,11 +24,13 @@ class ExpandedViewViewController: UIViewController, HelpInvoker {
     @IBOutlet weak var helpapppagemenuButton: SupernovaButton!
     @IBOutlet weak var tiparrowtocloseImageView: UIImageView!
     @IBOutlet weak var helpcloseButton: SupernovaButton!
+    @IBOutlet weak var tipArrowToTools: UIImageView!
+    @IBOutlet weak var tipArrowToPageMenu: UIImageView!
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
     // MARK: - Protocol HelpInvoker
     var morePressed: Bool = false
-    var helpLinks = Dictionary<UIButton, HelpLink>()
+    var helpLinks = Dictionary<UIView, HelpLink>()
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
     // MARK: - Lifecycle
@@ -41,11 +43,27 @@ class ExpandedViewViewController: UIViewController, HelpInvoker {
         self.setupLocalization()
         
         // Do any additional setup after loading the view, typically from a nib.
-        helpLinks[helpcloseButton] = HelpLink(
+
+        // these calls hook up the help buttons and optional indicators to trigger help
+        // so all the config is done here, don't need separate IBActions in this class
+        add(link:HelpLink(
                 button: helpcloseButton,
                 indicator: tiparrowtocloseImageView,
-                msg:"Roses are red, violets are cyan, if you don't like my verse then you're probably cryin",
-                url:"https://github.com/AndyDentFree/animashing")
+                msg: "Roses are red, violets are cyan, if you don't like my verse then you're probably cryin",
+                url: "https://github.com/AndyDentFree/animashing")
+        )
+        add(link: HelpLink(
+                button: helpapppagemenuButton,
+                indicator: tipArrowToPageMenu,
+                msg: "page menu",
+                url: nil)
+        )
+        add(link: HelpLink(
+                button: helptoolsButton,
+                indicator: tipArrowToTools,
+                msg: "tools",
+                url: nil)
+        )
     }
 
     override public func viewWillAppear(_ animated: Bool)  {

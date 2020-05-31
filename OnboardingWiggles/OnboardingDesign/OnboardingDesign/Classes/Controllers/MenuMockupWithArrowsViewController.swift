@@ -15,7 +15,7 @@ import UIKit
 // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 // MARK: - Implementation
 
-class MenuMockupWithArrowsViewController: UIViewController {
+class MenuMockupWithArrowsViewController: UIViewController, HelpInvoker {
 
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
@@ -26,7 +26,15 @@ class MenuMockupWithArrowsViewController: UIViewController {
     @IBOutlet weak var helpcomposerButton: SupernovaButton!
     @IBOutlet weak var helpfavesButton: SupernovaButton!
     @IBOutlet weak var helpappButton: SupernovaButton!
+    @IBOutlet weak var tipArrowToExpander: UIImageView!
+    @IBOutlet weak var tipArrowToApp: UIImageView!
+    @IBOutlet weak var tipArrowToComposer: UIImageView!
+    @IBOutlet weak var tipArrowToFaves: UIImageView!
 
+    // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    // MARK: - Protocol HelpInvoker
+    var morePressed: Bool = false
+    var helpLinks = Dictionary<UIView, HelpLink>()
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
     // MARK: - Lifecycle
@@ -39,6 +47,30 @@ class MenuMockupWithArrowsViewController: UIViewController {
         self.setupLocalization()
         
         // Do any additional setup after loading the view, typically from a nib.
+        add(link:HelpLink(
+                button: helpexpanderButton,
+                indicator: tipArrowToExpander,
+                msg: "expander",
+                url: "https://github.com/AndyDentFree/animashing")
+        )
+        add(link:HelpLink(
+                button: helpcomposerButton,
+                indicator: tipArrowToComposer,
+                msg: "composer",
+                url: "https://github.com/AndyDentFree/animashing")
+        )
+        add(link:HelpLink(
+                button: helpfavesButton,
+                indicator: tipArrowToFaves,
+                msg: "faves",
+                url: "https://github.com/AndyDentFree/animashing")
+        )
+        add(link:HelpLink(
+                button: helpappButton,
+                indicator: tipArrowToApp,
+                msg: "app",
+                url: "https://github.com/AndyDentFree/animashing")
+        )
     }
 
     override public func viewWillAppear(_ animated: Bool)  {
@@ -105,25 +137,5 @@ class MenuMockupWithArrowsViewController: UIViewController {
     @IBAction public func onComposerButtonPressed(_ sender: UIButton)  {
         let destination = ExpandedViewViewController(nibName: "ExpandedViewViewController", bundle: nil)
         self.navigationController?.pushViewController(destination, animated: true)
-    }
-
-    @IBAction public func onHelpExpanderPressed(_ sender: UIButton)  {
-        let destination = ShowHelpViewController(nibName: "ShowHelpViewController", bundle: nil)
-        self.present(destination, animated: true, completion: nil)
-    }
-
-    @IBAction public func onHelpComposerPressed(_ sender: UIButton)  {
-        let destination = ShowHelpViewController(nibName: "ShowHelpViewController", bundle: nil)
-        self.present(destination, animated: true, completion: nil)
-    }
-
-    @IBAction public func onHelpFavesPressed(_ sender: UIButton)  {
-        let destination = ShowHelpViewController(nibName: "ShowHelpViewController", bundle: nil)
-        self.present(destination, animated: true, completion: nil)
-    }
-
-    @IBAction public func onHelpAppPressed(_ sender: UIButton)  {
-        let destination = ShowHelpViewController(nibName: "ShowHelpViewController", bundle: nil)
-        self.present(destination, animated: true, completion: nil)
     }
 }

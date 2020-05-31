@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -13,10 +13,10 @@
     </customFonts>
     <objects>
         <view opaque="NO" contentMode="scaleToFill" id="Tz4-g7-cWQ">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="simulator-screen-shot---iphone-8-plus---2020-05-25-at-180516" translatesAutoresizingMaskIntoConstraints="NO" id="qtC-r7-k2C">
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simulator-screen-shot---iphone-8-plus---2020-05-25-at-180516" translatesAutoresizingMaskIntoConstraints="NO" id="qtC-r7-k2C">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
@@ -28,7 +28,7 @@
                     <rect key="frame" x="72" y="629" width="40" height="40"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sb4-IB-7kt" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sb4-IB-7kt" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
                     <rect key="frame" x="226" y="612" width="21" height="43"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -39,9 +39,6 @@
                     <state key="normal" title="?">
                         <color key="titleColor" red="0.99073106050491333" green="0.18823529779911041" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
-                    <connections>
-                        <action selector="onAnyHelpButtonPressed:" destination="2x2-LE-IBN" eventType="touchUpInside" id="gzz-3W-aCc"/>
-                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYE-e6-QxW" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
                     <rect key="frame" x="113" y="601" width="21" height="43"/>
@@ -54,9 +51,6 @@
                     <state key="normal" title="?">
                         <color key="titleColor" red="0.99073106050491333" green="0.18823529779911041" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
-                    <connections>
-                        <action selector="onAnyHelpButtonPressed:" destination="2x2-LE-IBN" eventType="touchUpInside" id="vHk-PL-Zhb"/>
-                    </connections>
                 </button>
                 <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="HA4-X7-uVs">
                     <rect key="frame" x="327" y="102" width="40" height="40"/>
@@ -73,9 +67,6 @@
                     <state key="normal" title="?">
                         <color key="titleColor" red="0.99073106050491333" green="0.18823529779911041" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
-                    <connections>
-                        <action selector="onAnyHelpButtonPressed:" destination="2x2-LE-IBN" eventType="touchUpInside" id="WNm-MX-man"/>
-                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -104,6 +95,8 @@
                 <outlet property="helpapppagemenuButton" destination="LYE-e6-QxW" id="wuY-1B-GHb"/>
                 <outlet property="helpcloseButton" destination="NFw-FR-uNP" id="ooX-hk-BIS"/>
                 <outlet property="helptoolsButton" destination="sb4-IB-7kt" id="X2N-6l-4VR"/>
+                <outlet property="tipArrowToPageMenu" destination="cRr-Fd-aC4" id="vhP-yE-4VK"/>
+                <outlet property="tipArrowToTools" destination="hhc-sI-ckV" id="HdC-2p-b79"/>
                 <outlet property="tiparrowtocloseImageView" destination="HA4-X7-uVs" id="EdP-it-33U"/>
                 <outlet property="view" destination="Tz4-g7-cWQ" id="BaA-0K-83O"/>
             </connections>

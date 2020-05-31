@@ -65,6 +65,8 @@ HelpInvoker.swift
 - HelpLink added
 - protocol HelpInvoker - add dictionary of UIButton to HelpLink
 - protocol extension - add showHelp(for:UIButton)
+- add(helpLink) added
+- extension to UIViewController added to wrap onHelpButton
 
 ExpandedViewViewController.swift
 - add property helpLinks
@@ -72,3 +74,14 @@ ExpandedViewViewController.swift
 - helpCloseButtonPressed - renamed onAnyHelpButtonPressed
 - onHelpToolsPressed & onHelpAppPageMenuPressed removed
 - connection actions for other help buttons to onAnyHelpButtonPressed
+- tipArrowToTools and tipArrowToPageMenu outlets added
+
+MenuMockupWithArrowsViewController
+- add outlets for all four arrows
+- add HelpInvoker protocol with the morePressed and helpLinks properties
+- viewDidLoad - setup helpLinks
+- removed unneeded help actions
+  onHelpExpanderPressed
+  onHelpComposerPressed
+  onHelpFavesPressed
+  onHelpAppPressed
