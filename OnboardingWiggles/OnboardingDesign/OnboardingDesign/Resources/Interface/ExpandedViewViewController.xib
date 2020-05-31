@@ -1,111 +1,116 @@
-<document systemVersion="15B42" targetRuntime="iOS.CocoaTouch" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useTraitCollections="YES" useAutolayout="YES" propertyAccessControl="none" version="3.0" toolsVersion="14313.13.2" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen" />
-    </device>
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn version="14283.9" identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" />
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Black.otf">
+            <string>SFProDisplay-Black</string>
+        </array>
+    </customFonts>
     <objects>
-        <view id="Tz4-g7-cWQ" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="YES" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" key="view">
-            <color key="backgroundColor" colorSpace="calibratedRGB" red="1.0" green="1.0" blue="1.0" alpha="1.0" />
-            <rect key="frame" x="0" y="0" width="414" height="736" />
-            <constraints>
-                <constraint firstItem="qtC-r7-k2C" firstAttribute="leading" secondItem="Tz4-g7-cWQ" secondAttribute="leading" constant="0" id="bqB-3K-cug" />
-                <constraint firstItem="Tz4-g7-cWQ" firstAttribute="trailing" secondItem="qtC-r7-k2C" secondAttribute="trailing" constant="0" id="hsg-1w-Drm" />
-                <constraint firstItem="qtC-r7-k2C" firstAttribute="centerY" secondItem="Tz4-g7-cWQ" secondAttribute="centerY" constant="0" id="Ib3-Iv-0jQ" />
-                <constraint firstItem="hhc-sI-ckV" firstAttribute="centerX" secondItem="Tz4-g7-cWQ" secondAttribute="centerX" constant="0" id="aLW-iU-GM9" />
-                <constraint firstItem="Tz4-g7-cWQ" firstAttribute="bottom" secondItem="hhc-sI-ckV" secondAttribute="bottom" constant="54" id="DaF-JS-2GI" />
-                <constraint firstItem="cRr-Fd-aC4" firstAttribute="leading" secondItem="Tz4-g7-cWQ" secondAttribute="leading" constant="72" id="MKl-H1-Lxg" />
-                <constraint firstItem="Tz4-g7-cWQ" firstAttribute="bottom" secondItem="cRr-Fd-aC4" secondAttribute="bottom" constant="65" id="cBo-0U-XLo" />
-                <constraint firstItem="Tz4-g7-cWQ" firstAttribute="trailing" secondItem="sb4-IB-7kt" secondAttribute="trailing" constant="167" id="cKI-4x-1rJ" />
-                <constraint firstItem="Tz4-g7-cWQ" firstAttribute="bottom" secondItem="sb4-IB-7kt" secondAttribute="bottom" constant="81" id="AAB-Ce-p9k" />
-                <constraint firstItem="LYE-e6-QxW" firstAttribute="leading" secondItem="cRr-Fd-aC4" secondAttribute="trailing" constant="0" id="zYP-T1-N2h" />
-                <constraint firstItem="Tz4-g7-cWQ" firstAttribute="bottom" secondItem="LYE-e6-QxW" secondAttribute="bottom" constant="92" id="Vuv-05-zPW" />
-                <constraint firstItem="Tz4-g7-cWQ" firstAttribute="trailing" secondItem="HA4-X7-uVs" secondAttribute="trailing" constant="46" id="Fvj-9I-6Vh" />
-                <constraint firstItem="HA4-X7-uVs" firstAttribute="top" secondItem="Tz4-g7-cWQ" secondAttribute="top" constant="102" id="tee-jo-RvK" />
-                <constraint firstItem="HA4-X7-uVs" firstAttribute="leading" secondItem="NFw-FR-uNP" secondAttribute="trailing" constant="1" id="OWN-ZB-vjs" />
-                <constraint firstItem="NFw-FR-uNP" firstAttribute="top" secondItem="Tz4-g7-cWQ" secondAttribute="top" constant="121" id="oVN-k2-EAK" />
-            </constraints>
+        <view opaque="NO" contentMode="scaleToFill" id="Tz4-g7-cWQ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView id="qtC-r7-k2C" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" customModule="iOS_Development" customModuleProvider="target" horizontalHuggingPriority="251" verticalHuggingPriority="251" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="simulator-screen-shot---iphone-8-plus---2020-05-25-at-180516">
-                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0.0" green="0.0" blue="0.0" alpha="0.0" />
-                    <rect key="frame" x="0" y="0" width="414" height="736" />
-                    <constraints />
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="simulator-screen-shot---iphone-8-plus---2020-05-25-at-180516" translatesAutoresizingMaskIntoConstraints="NO" id="qtC-r7-k2C">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <imageView id="hhc-sI-ckV" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" customModule="iOS_Development" customModuleProvider="target" horizontalHuggingPriority="251" verticalHuggingPriority="251" userInteractionEnabled="NO" contentMode="center" image="tiparrowtotools">
-                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0.0" green="0.0" blue="0.0" alpha="0.0" />
-                    <rect key="frame" x="185" y="640" width="40" height="40" />
-                    <constraints />
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="hhc-sI-ckV">
+                    <rect key="frame" x="185" y="640" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <imageView id="cRr-Fd-aC4" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" customModule="iOS_Development" customModuleProvider="target" horizontalHuggingPriority="251" verticalHuggingPriority="251" userInteractionEnabled="NO" contentMode="center" image="tiparrowtotools">
-                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0.0" green="0.0" blue="0.0" alpha="0.0" />
-                    <rect key="frame" x="72" y="629" width="40" height="40" />
-                    <constraints />
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="cRr-Fd-aC4">
+                    <rect key="frame" x="72" y="629" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <button id="sb4-IB-7kt" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" customModule="iOS_Development" customModuleProvider="target" customClass="SupernovaButton" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation">
-                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0.0" green="0.0" blue="0.0" alpha="0.0" />
-                    <rect key="frame" x="226" y="612" width="21" height="43" />
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sb4-IB-7kt" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
+                    <rect key="frame" x="226" y="612" width="21" height="43"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstItem="sb4-IB-7kt" firstAttribute="width" constant="21" id="13G-fR-ugR" />
-                        <constraint firstItem="sb4-IB-7kt" firstAttribute="height" constant="43" id="eZu-kW-7tS" />
+                        <constraint firstAttribute="width" constant="21" id="13G-fR-ugR"/>
+                        <constraint firstAttribute="height" constant="43" id="eZu-kW-7tS"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="36" />
-                    <state title="?" key="normal">
-                        <color key="titleColor" colorSpace="calibratedRGB" red="0.9907310605049133" green="0.1882352977991104" blue="1.0" alpha="1.0" />
+                    <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="36"/>
+                    <state key="normal" title="?">
+                        <color key="titleColor" red="0.99073106050491333" green="0.18823529779911041" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
-                        <action selector="onHelpToolsPressed:" destination="2x2-LE-IBN" eventType="touchUpInside" id="JIA-C4-9q9" />
+                        <action selector="onAnyHelpButtonPressed:" destination="2x2-LE-IBN" eventType="touchUpInside" id="gzz-3W-aCc"/>
                     </connections>
                 </button>
-                <button id="LYE-e6-QxW" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" customModule="iOS_Development" customModuleProvider="target" customClass="SupernovaButton" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation">
-                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0.0" green="0.0" blue="0.0" alpha="0.0" />
-                    <rect key="frame" x="113" y="601" width="21" height="43" />
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYE-e6-QxW" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
+                    <rect key="frame" x="113" y="601" width="21" height="43"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstItem="LYE-e6-QxW" firstAttribute="width" constant="21" id="Vvt-NW-vwi" />
-                        <constraint firstItem="LYE-e6-QxW" firstAttribute="height" constant="43" id="qKx-72-Wnk" />
+                        <constraint firstAttribute="width" constant="21" id="Vvt-NW-vwi"/>
+                        <constraint firstAttribute="height" constant="43" id="qKx-72-Wnk"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="36" />
-                    <state title="?" key="normal">
-                        <color key="titleColor" colorSpace="calibratedRGB" red="0.9907310605049133" green="0.1882352977991104" blue="1.0" alpha="1.0" />
+                    <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="36"/>
+                    <state key="normal" title="?">
+                        <color key="titleColor" red="0.99073106050491333" green="0.18823529779911041" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
-                        <action selector="onHelpAppPageMenuPressed:" destination="2x2-LE-IBN" eventType="touchUpInside" id="Q17-m2-Jw9" />
+                        <action selector="onAnyHelpButtonPressed:" destination="2x2-LE-IBN" eventType="touchUpInside" id="vHk-PL-Zhb"/>
                     </connections>
                 </button>
-                <imageView id="HA4-X7-uVs" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" customModule="iOS_Development" customModuleProvider="target" horizontalHuggingPriority="251" verticalHuggingPriority="251" userInteractionEnabled="NO" contentMode="center" image="tiparrowtotools">
-                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0.0" green="0.0" blue="0.0" alpha="0.0" />
-                    <rect key="frame" x="327" y="102" width="40" height="40" />
-                    <constraints />
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="HA4-X7-uVs">
+                    <rect key="frame" x="327" y="102" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <button id="NFw-FR-uNP" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" alpha="1.0" hidden="NO" contextMode="scaleToFill" userLabel="" opaque="NO" customModule="iOS_Development" customModuleProvider="target" customClass="SupernovaButton" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation">
-                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0.0" green="0.0" blue="0.0" alpha="0.0" />
-                    <rect key="frame" x="305" y="121" width="21" height="43" />
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFw-FR-uNP" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
+                    <rect key="frame" x="305" y="121" width="21" height="43"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstItem="NFw-FR-uNP" firstAttribute="width" constant="21" id="k4Q-nu-J7c" />
-                        <constraint firstItem="NFw-FR-uNP" firstAttribute="height" constant="43" id="U8D-78-rrY" />
+                        <constraint firstAttribute="height" constant="43" id="U8D-78-rrY"/>
+                        <constraint firstAttribute="width" constant="21" id="k4Q-nu-J7c"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="36" />
-                    <state title="?" key="normal">
-                        <color key="titleColor" colorSpace="calibratedRGB" red="0.9907310605049133" green="0.1882352977991104" blue="1.0" alpha="1.0" />
+                    <fontDescription key="fontDescription" name="SFProDisplay-Black" family="SF Pro Display" pointSize="36"/>
+                    <state key="normal" title="?">
+                        <color key="titleColor" red="0.99073106050491333" green="0.18823529779911041" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
-                        <action selector="onHelpClosePressed:" destination="2x2-LE-IBN" eventType="touchUpInside" id="1vM-xf-zkW" />
+                        <action selector="onAnyHelpButtonPressed:" destination="2x2-LE-IBN" eventType="touchUpInside" id="WNm-MX-man"/>
                     </connections>
                 </button>
             </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sb4-IB-7kt" secondAttribute="bottom" constant="81" id="AAB-Ce-p9k"/>
+                <constraint firstAttribute="bottom" secondItem="hhc-sI-ckV" secondAttribute="bottom" constant="54" id="DaF-JS-2GI"/>
+                <constraint firstAttribute="trailing" secondItem="HA4-X7-uVs" secondAttribute="trailing" constant="46" id="Fvj-9I-6Vh"/>
+                <constraint firstItem="qtC-r7-k2C" firstAttribute="centerY" secondItem="Tz4-g7-cWQ" secondAttribute="centerY" id="Ib3-Iv-0jQ"/>
+                <constraint firstItem="cRr-Fd-aC4" firstAttribute="leading" secondItem="Tz4-g7-cWQ" secondAttribute="leading" constant="72" id="MKl-H1-Lxg"/>
+                <constraint firstItem="HA4-X7-uVs" firstAttribute="leading" secondItem="NFw-FR-uNP" secondAttribute="trailing" constant="1" id="OWN-ZB-vjs"/>
+                <constraint firstAttribute="bottom" secondItem="LYE-e6-QxW" secondAttribute="bottom" constant="92" id="Vuv-05-zPW"/>
+                <constraint firstItem="hhc-sI-ckV" firstAttribute="centerX" secondItem="Tz4-g7-cWQ" secondAttribute="centerX" id="aLW-iU-GM9"/>
+                <constraint firstItem="qtC-r7-k2C" firstAttribute="leading" secondItem="Tz4-g7-cWQ" secondAttribute="leading" id="bqB-3K-cug"/>
+                <constraint firstAttribute="bottom" secondItem="cRr-Fd-aC4" secondAttribute="bottom" constant="65" id="cBo-0U-XLo"/>
+                <constraint firstAttribute="trailing" secondItem="sb4-IB-7kt" secondAttribute="trailing" constant="167" id="cKI-4x-1rJ"/>
+                <constraint firstAttribute="trailing" secondItem="qtC-r7-k2C" secondAttribute="trailing" id="hsg-1w-Drm"/>
+                <constraint firstItem="NFw-FR-uNP" firstAttribute="top" secondItem="Tz4-g7-cWQ" secondAttribute="top" constant="121" id="oVN-k2-EAK"/>
+                <constraint firstItem="HA4-X7-uVs" firstAttribute="top" secondItem="Tz4-g7-cWQ" secondAttribute="top" constant="102" id="tee-jo-RvK"/>
+                <constraint firstItem="LYE-e6-QxW" firstAttribute="leading" secondItem="cRr-Fd-aC4" secondAttribute="trailing" id="zYP-T1-N2h"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="155"/>
         </view>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="2x2-LE-IBN" userLabel="File&apos;s Owner" customModule="iOS_Development" customModuleProvider="target" customClass="ExpandedViewViewController">
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="2x2-LE-IBN" userLabel="File's Owner" customClass="ExpandedViewViewController" customModule="OnboardingDesign" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="Tz4-g7-cWQ" id="BaA-0K-83O" />
-                <outlet property="helptoolsButton" destination="sb4-IB-7kt" id="X2N-6l-4VR" />
-                <outlet property="helpapppagemenuButton" destination="LYE-e6-QxW" id="wuY-1B-GHb" />
-                <outlet property="tiparrowtocloseImageView" destination="HA4-X7-uVs" id="EdP-it-33U" />
-                <outlet property="helpcloseButton" destination="NFw-FR-uNP" id="ooX-hk-BIS" />
+                <outlet property="helpapppagemenuButton" destination="LYE-e6-QxW" id="wuY-1B-GHb"/>
+                <outlet property="helpcloseButton" destination="NFw-FR-uNP" id="ooX-hk-BIS"/>
+                <outlet property="helptoolsButton" destination="sb4-IB-7kt" id="X2N-6l-4VR"/>
+                <outlet property="tiparrowtocloseImageView" destination="HA4-X7-uVs" id="EdP-it-33U"/>
+                <outlet property="view" destination="Tz4-g7-cWQ" id="BaA-0K-83O"/>
             </connections>
         </placeholder>
     </objects>
     <resources>
-        <image name="simulator-screen-shot---iphone-8-plus---2020-05-25-at-180516" width="414" height="736" />
-        <image name="tiparrowtotools" width="40" height="40" />
+        <image name="simulator-screen-shot---iphone-8-plus---2020-05-25-at-180516" width="414" height="736"/>
+        <image name="tiparrowtotools" width="41" height="41"/>
     </resources>
 </document>

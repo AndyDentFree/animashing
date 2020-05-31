@@ -6,12 +6,28 @@
 import Foundation
 import UIKit
 
+struct HelpLink {
+    var button:UIButton? = nil
+    var indicator:UIImageView? = nil
+    var msg: String = ""
+    var url: String? = nil
+}
+
 protocol HelpInvoker {
     func showHelp(msg:String, url:String?)
     var morePressed: Bool {get set}  // flag set by Help if more button pressed
+    var helpLinks: Dictionary<UIButton, HelpLink> {get set}
 }
 
 extension HelpInvoker where Self: UIViewController {
+    func showHelp(for btn:UIButton) {
+        if let link = helpLinks[btn] {
+            showHelp(msg: link.msg, url: link.url)
+        } else {
+            showHelp(msg: "Help not specified", url: nil)
+        }
+    }
+
     func showHelp(msg:String, url:String?=nil) {
         let helpVC = ShowHelpViewController(nibName: "ShowHelpViewController", bundle: nil)
         helpVC.invokedBy = self

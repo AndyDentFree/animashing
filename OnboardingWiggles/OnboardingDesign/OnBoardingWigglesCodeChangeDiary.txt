@@ -56,3 +56,19 @@ ShowHelpViewcontroller.swift
 
 AppDelegate.swift
 - applicationDidFinishLaunching init ShowHelpViewController.urlLauncher
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Connect all Help buttons and Arrows
+2020-05-31
+
+HelpInvoker.swift
+- HelpLink added
+- protocol HelpInvoker - add dictionary of UIButton to HelpLink
+- protocol extension - add showHelp(for:UIButton)
+
+ExpandedViewViewController.swift
+- add property helpLinks
+- viewDidLoad - setup helpLinks
+- helpCloseButtonPressed - renamed onAnyHelpButtonPressed
+- onHelpToolsPressed & onHelpAppPageMenuPressed removed
+- connection actions for other help buttons to onAnyHelpButtonPressed

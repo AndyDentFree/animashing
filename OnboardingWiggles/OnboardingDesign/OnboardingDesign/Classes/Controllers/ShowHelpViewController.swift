@@ -29,6 +29,7 @@ class ShowHelpViewController: UIViewController {
     public var invokedBy: HelpInvoker? = nil
     public var helpMsg: String? = nil
     public var moreUrl: URL? = nil
+
     public static var urlLauncher: ((URL) -> Void)? = nil // abstract this a bit because some environments need indirection
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

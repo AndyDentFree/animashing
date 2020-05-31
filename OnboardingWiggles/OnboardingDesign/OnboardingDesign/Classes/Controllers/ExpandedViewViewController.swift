@@ -24,8 +24,11 @@ class ExpandedViewViewController: UIViewController, HelpInvoker {
     @IBOutlet weak var helpapppagemenuButton: SupernovaButton!
     @IBOutlet weak var tiparrowtocloseImageView: UIImageView!
     @IBOutlet weak var helpcloseButton: SupernovaButton!
-    var morePressed: Bool = false  // satisfies HelpInvoker
 
+    // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    // MARK: - Protocol HelpInvoker
+    var morePressed: Bool = false
+    var helpLinks = Dictionary<UIButton, HelpLink>()
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
     // MARK: - Lifecycle
@@ -38,6 +41,11 @@ class ExpandedViewViewController: UIViewController, HelpInvoker {
         self.setupLocalization()
         
         // Do any additional setup after loading the view, typically from a nib.
+        helpLinks[helpcloseButton] = HelpLink(
+                button: helpcloseButton,
+                indicator: tiparrowtocloseImageView,
+                msg:"Roses are red, violets are cyan, if you don't like my verse then you're probably cryin",
+                url:"https://github.com/AndyDentFree/animashing")
     }
 
     override public func viewWillAppear(_ animated: Bool)  {
@@ -94,18 +102,8 @@ class ExpandedViewViewController: UIViewController, HelpInvoker {
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
     // MARK: - Actions
-
-    @IBAction public func onHelpToolsPressed(_ sender: UIButton)  {
-    
-    }
-
-    @IBAction public func onHelpAppPageMenuPressed(_ sender: UIButton)  {
-    
-    }
-
-    @IBAction public func onHelpClosePressed(_ sender: UIButton)  {
-        showHelp(msg:"Roses are red, violets are cyan, if you don't like my verse then you're probably cryin", 
-                url:"https://github.com/AndyDentFree/animashing")
+    @IBAction public func onAnyHelpButtonPressed(_ sender: UIButton)  {
+        showHelp(for:sender)
     }
 
 
