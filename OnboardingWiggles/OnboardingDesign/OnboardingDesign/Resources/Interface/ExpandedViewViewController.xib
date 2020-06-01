@@ -16,19 +16,19 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simulator-screen-shot---iphone-8-plus---2020-05-25-at-180516" translatesAutoresizingMaskIntoConstraints="NO" id="qtC-r7-k2C">
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simulator-screen-shot---iphone-8-plus---2020-05-25-at-180516" translatesAutoresizingMaskIntoConstraints="NO" id="qtC-r7-k2C">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="hhc-sI-ckV">
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotoolsInv" translatesAutoresizingMaskIntoConstraints="NO" id="hhc-sI-ckV">
                     <rect key="frame" x="185" y="640" width="40" height="40"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="cRr-Fd-aC4">
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotoolsInv" translatesAutoresizingMaskIntoConstraints="NO" id="cRr-Fd-aC4" userLabel="tiparrowtoPageMenu">
                     <rect key="frame" x="72" y="629" width="40" height="40"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sb4-IB-7kt" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sb4-IB-7kt" userLabel="helpTools" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
                     <rect key="frame" x="226" y="612" width="21" height="43"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -40,7 +40,7 @@
                         <color key="titleColor" red="0.99073106050491333" green="0.18823529779911041" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYE-e6-QxW" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYE-e6-QxW" userLabel="helpPagMenu" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
                     <rect key="frame" x="113" y="601" width="21" height="43"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -52,11 +52,11 @@
                         <color key="titleColor" red="0.99073106050491333" green="0.18823529779911041" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="HA4-X7-uVs">
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="HA4-X7-uVs" userLabel="tiparrowtoClose">
                     <rect key="frame" x="327" y="102" width="40" height="40"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFw-FR-uNP" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFw-FR-uNP" userLabel="helpClose" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
                     <rect key="frame" x="305" y="121" width="21" height="43"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -105,5 +105,6 @@
     <resources>
         <image name="simulator-screen-shot---iphone-8-plus---2020-05-25-at-180516" width="414" height="736"/>
         <image name="tiparrowtotools" width="41" height="41"/>
+        <image name="tiparrowtotoolsInv" width="41" height="41"/>
     </resources>
 </document>

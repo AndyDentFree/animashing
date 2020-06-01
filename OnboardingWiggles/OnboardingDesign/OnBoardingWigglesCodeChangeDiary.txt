@@ -85,3 +85,14 @@ MenuMockupWithArrowsViewController
   onHelpComposerPressed
   onHelpFavesPressed
   onHelpAppPressed
+  
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Minor UI improvements - inverted arrows 
+2020-05-31  
+
+Images.xcassets
+- tiparrowtotoolsInv added
+
+ExpandedViewViewController.xib
+- use tiparrowtotoolsInv for two arrows
+

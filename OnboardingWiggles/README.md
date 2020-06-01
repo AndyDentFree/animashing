@@ -32,6 +32,8 @@ See the file `./OnBoardingDesign/OnBoardingWigglesCodeChangeDiary.txt` for detai
 
 ## Playing the Demo
 
+**Important** the demo sizing only works on an iPhone Plus8 simulator. The bottom tab on the expanded background image is sized for that 5.5" phone (this **is** just a quick demo)
+
 - The demo starts with a mock screen with the Composer button below being live. 
 - Pressing Composer shows a mock expanded _document_ screen
 - Pressing the Help button for the top-right help will trigger a modal overlay of the help screen
