@@ -20,11 +20,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotoolsInv" translatesAutoresizingMaskIntoConstraints="NO" id="hhc-sI-ckV">
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rev_tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="hhc-sI-ckV">
                     <rect key="frame" x="185" y="640" width="40" height="40"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotoolsInv" translatesAutoresizingMaskIntoConstraints="NO" id="cRr-Fd-aC4" userLabel="tiparrowtoPageMenu">
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rev_tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="cRr-Fd-aC4" userLabel="tiparrowtoPageMenu">
                     <rect key="frame" x="72" y="629" width="40" height="40"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
@@ -118,8 +118,8 @@
         </placeholder>
     </objects>
     <resources>
+        <image name="rev_tiparrowtotools" width="41" height="41"/>
         <image name="simulator-screen-shot---iphone-8-plus---2020-05-25-at-180516" width="414" height="736"/>
         <image name="tiparrowtotools" width="41" height="41"/>
-        <image name="tiparrowtotoolsInv" width="41" height="41"/>
     </resources>
 </document>

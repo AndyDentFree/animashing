@@ -126,4 +126,12 @@ ExpandedViewViewController.swift
 
 onboardingDesign.sketch
 onboardingDesign.snproject
-- added the collapseButton with navigation back and generated code so prototype matches app behaviour
+- added the collapseButton with navigation back and generated code so prototype matches app behaviour- added the collapseButton with navigation back and generated code so prototype matches app behaviour
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Fix reversed arrows not reversed at runtime
+2020-06-03
+
+images.xcassets
+- tiparrowtoolsinv removed (was initially renamed thinking name was cause)
+- ref_tiparrowtotools added with flip of image accomplished in AffinityDesigner because flip done with Preview just recorded a transform that works in Interface Builder but not at runtime
