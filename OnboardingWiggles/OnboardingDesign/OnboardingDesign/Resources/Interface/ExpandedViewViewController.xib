@@ -68,6 +68,18 @@
                         <color key="titleColor" red="0.99073106050491333" green="0.18823529779911041" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqH-6X-t71" userLabel="collapseButton" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
+                    <rect key="frame" x="169" y="53" width="76" height="43"/>
+                    <color key="backgroundColor" red="0.1725473106" green="0.1728208363" blue="0.1803883016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="iPe-Xy-5qs"/>
+                        <constraint firstAttribute="width" constant="76" id="oJq-2V-1aZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <connections>
+                        <action selector="onCollapseButtonPressed:" destination="2x2-LE-IBN" eventType="touchUpInside" id="QAC-bW-ZAg"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
@@ -83,6 +95,8 @@
                 <constraint firstAttribute="bottom" secondItem="cRr-Fd-aC4" secondAttribute="bottom" constant="65" id="cBo-0U-XLo"/>
                 <constraint firstAttribute="trailing" secondItem="sb4-IB-7kt" secondAttribute="trailing" constant="167" id="cKI-4x-1rJ"/>
                 <constraint firstAttribute="trailing" secondItem="qtC-r7-k2C" secondAttribute="trailing" id="hsg-1w-Drm"/>
+                <constraint firstItem="qtC-r7-k2C" firstAttribute="top" secondItem="NqH-6X-t71" secondAttribute="bottom" constant="-96" id="jPg-KI-ewB"/>
+                <constraint firstItem="NqH-6X-t71" firstAttribute="centerX" secondItem="qtC-r7-k2C" secondAttribute="centerX" id="jqV-7B-oRx"/>
                 <constraint firstItem="NFw-FR-uNP" firstAttribute="top" secondItem="Tz4-g7-cWQ" secondAttribute="top" constant="121" id="oVN-k2-EAK"/>
                 <constraint firstItem="HA4-X7-uVs" firstAttribute="top" secondItem="Tz4-g7-cWQ" secondAttribute="top" constant="102" id="tee-jo-RvK"/>
                 <constraint firstItem="LYE-e6-QxW" firstAttribute="leading" secondItem="cRr-Fd-aC4" secondAttribute="trailing" id="zYP-T1-N2h"/>
@@ -92,6 +106,7 @@
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <placeholder placeholderIdentifier="IBFilesOwner" id="2x2-LE-IBN" userLabel="File's Owner" customClass="ExpandedViewViewController" customModule="OnboardingDesign" customModuleProvider="target">
             <connections>
+                <outlet property="collapseButton" destination="NqH-6X-t71" id="k4Z-xY-M0s"/>
                 <outlet property="helpapppagemenuButton" destination="LYE-e6-QxW" id="wuY-1B-GHb"/>
                 <outlet property="helpcloseButton" destination="NFw-FR-uNP" id="ooX-hk-BIS"/>
                 <outlet property="helptoolsButton" destination="sb4-IB-7kt" id="X2N-6l-4VR"/>

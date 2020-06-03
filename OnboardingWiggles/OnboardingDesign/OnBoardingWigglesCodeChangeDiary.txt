@@ -112,3 +112,18 @@ PresentationController.swift
   
 ShowHelpViewcontroller
 - configureTransition pass a tap recognizer to the TransitioningDelegate
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Add a fake "collapse button" so test can navigate back to menu
+2020-06-03
+
+ExpandedViewViewController.xib
+- collapseButton added
+
+ExpandedViewViewController.swift
+- collapseButton outlet added
+- onCollapseButtonPressed added to navigate back
+
+onboardingDesign.sketch
+onboardingDesign.snproject
+- added the collapseButton with navigation back and generated code so prototype matches app behaviour

@@ -26,6 +26,7 @@ class ExpandedViewViewController: UIViewController, HelpInvoker {
     @IBOutlet weak var helpcloseButton: SupernovaButton!
     @IBOutlet weak var tipArrowToTools: UIImageView!
     @IBOutlet weak var tipArrowToPageMenu: UIImageView!
+    @IBOutlet weak var collapseButton: SupernovaButton!
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
     // MARK: - Protocol HelpInvoker
@@ -122,6 +123,15 @@ class ExpandedViewViewController: UIViewController, HelpInvoker {
     // MARK: - Actions
     @IBAction public func onAnyHelpButtonPressed(_ sender: UIButton)  {
         showHelp(for:sender)
+    }
+    
+    @IBAction public func onCollapseButtonPressed(_ sender: UIButton)  {
+        // Pop the navigation stack or dismiss the modal presentation
+        if let navigationController = self.navigationController, navigationController.viewControllers.first != self {
+            navigationController.popViewController(animated: true)
+        } else if self.presentingViewController != nil {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
 
 
