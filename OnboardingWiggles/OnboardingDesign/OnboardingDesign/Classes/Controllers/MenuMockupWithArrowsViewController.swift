@@ -80,6 +80,12 @@ class MenuMockupWithArrowsViewController: UIViewController, HelpInvoker {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        [tipArrowToExpander, tipArrowToComposer, tipArrowToApp, tipArrowToFaves]
+                .forEach{animateTipArrowUpRight(of: $0)}
+    }
+
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
     // MARK: - Setup

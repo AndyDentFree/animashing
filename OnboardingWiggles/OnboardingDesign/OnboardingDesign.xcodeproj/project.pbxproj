@@ -13,6 +13,7 @@
 		30CD081D7D60BAB4C54C0754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8F2C0BDC988562099B544D /* AppDelegate.swift */; };
 		3AA70DDA6E117BA5D10F6DEF /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = AB0FD64FB6DAFA359C8B36BD /* SF-Pro-Display-Black.otf */; };
 		403D210C605404B8D55A93F9 /* ShowHelpViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 6984F231DEC6FF1C3D627A2A /* ShowHelpViewController.xib */; };
+		4269010B2487BE3700482E88 /* HelpAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269010A2487BE3700482E88 /* HelpAnimations.swift */; };
 		500F55D4E06AD77856755DFD /* NSMutableParagraphStyle+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3554ED95F12775A0218F8D11 /* NSMutableParagraphStyle+Utility.swift */; };
 		64BAC1DEC5954AAC7BE260D4 /* UIImage+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C11850596173112BC428A4 /* UIImage+Utility.swift */; };
 		BE5863B802B97E459696B6AB /* SupernovaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5346B11099C5031725B5C /* SupernovaButton.swift */; };
@@ -36,6 +37,7 @@
 		16C11850596173112BC428A4 /* UIImage+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Utility.swift"; sourceTree = "<group>"; };
 		2DFBC8E04E69DB7D87F76340 /* ExpandedViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandedViewViewController.xib; sourceTree = "<group>"; };
 		3554ED95F12775A0218F8D11 /* NSMutableParagraphStyle+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableParagraphStyle+Utility.swift"; sourceTree = "<group>"; };
+		4269010A2487BE3700482E88 /* HelpAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpAnimations.swift; sourceTree = "<group>"; };
 		609F49F0DBF5D99B5069AE9F /* SupernovaLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupernovaLabel.swift; sourceTree = "<group>"; };
 		6984F231DEC6FF1C3D627A2A /* ShowHelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowHelpViewController.xib; sourceTree = "<group>"; };
 		6B66AC1AC9466C64AF75C343 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Info.plist; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				E6CCE539598476B0BF06228B /* Controllers */,
 				AA7D3A1F9A15909518156B23 /* Extensions */,
 				ED8F2C0BDC988562099B544D /* AppDelegate.swift */,
+				4269010A2487BE3700482E88 /* HelpAnimations.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				403D210C605404B8D55A93F9 /* ShowHelpViewController.xib in Sources */,
 				BE5863B802B97E459696B6AB /* SupernovaButton.swift in Sources */,
 				CDF1C302A75B83FA18BF1F41 /* ExpandedViewViewController.xib in Sources */,
+				4269010B2487BE3700482E88 /* HelpAnimations.swift in Sources */,
 				500F55D4E06AD77856755DFD /* NSMutableParagraphStyle+Utility.swift in Sources */,
 				1E808FA9B3C31BD3025370E8 /* SupernovaLabel.swift in Sources */,
 				64BAC1DEC5954AAC7BE260D4 /* UIImage+Utility.swift in Sources */,

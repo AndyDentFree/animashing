@@ -126,7 +126,7 @@ ExpandedViewViewController.swift
 
 onboardingDesign.sketch
 onboardingDesign.snproject
-- added the collapseButton with navigation back and generated code so prototype matches app behaviour- added the collapseButton with navigation back and generated code so prototype matches app behaviour
+- added the collapseButton with navigation back and generated code so prototype matches app behaviour
 
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 Fix reversed arrows not reversed at runtime
@@ -135,3 +135,20 @@ Fix reversed arrows not reversed at runtime
 images.xcassets
 - tiparrowtoolsinv removed (was initially renamed thinking name was cause)
 - ref_tiparrowtotools added with flip of image accomplished in AffinityDesigner because flip done with Preview just recorded a transform that works in Interface Builder but not at runtime
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Animate all arrows on entry
+2020-06-03
+
+HelpAnimations.swift
+- added with animateTipArrowUpRight as renaming of animationOne
+  - comment out the isRemovedOnCompletion settings so left as default true
+  - parameterise
+
+ExpandedViewViewController.swift
+- animationOne refactored out to HelpAnimations
+- viewDidLoad added to call HelpAnimations functions on all arrows
+
+
+MenuMockupWithArrowsViewController.swift
+- viewDidLoad added to call HelpAnimations functions on all arrows
