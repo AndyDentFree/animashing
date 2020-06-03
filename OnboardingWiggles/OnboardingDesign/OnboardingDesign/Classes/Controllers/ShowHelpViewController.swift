@@ -34,7 +34,8 @@ class ShowHelpViewController: UIViewController {
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
     // MARK: - Support for fancy transitions
-    private var customTransitioningDelegate = TransitioningDelegate()
+    private lazy var customTransitioningDelegate = TransitioningDelegate() // MUST have local property to retain this otherwise lose dimmer
+
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         configureTransition()
@@ -72,20 +73,12 @@ class ShowHelpViewController: UIViewController {
     private func configureTransition() {
         modalPresentationStyle = .custom
         modalTransitionStyle = .crossDissolve              // use whatever transition you want
+        let exitOnTap = UITapGestureRecognizer(target: self, action: #selector(self.handleTapLabel(_:)))
+        customTransitioningDelegate = TransitioningDelegate(tapper: exitOnTap)
         transitioningDelegate = customTransitioningDelegate
     }
 
     private func setupComponents()  {
-  /*
-        // Setup tiptextLabel
-        let tiptextLabelAttrString = NSMutableAttributedString(string: "Tap or drag the bar to switch between the full-size editor and this compact menu", attributes: [
-            .font : UIFont(name: "SFCompactText-Regular", size: 17)!,
-            .foregroundColor : UIColor(red: 0.37, green: 0.05, blue: 0.38, alpha: 1),
-            .kern : 0,
-            .paragraphStyle : NSMutableParagraphStyle(alignment: .left, lineHeight: nil, paragraphSpacing: 1)
-        ])
-        self.tiptextLabel.attributedText = tiptextLabelAttrString
-        */
         self.tiptextLabel.text = helpMsg
         
         // Setup morebuttonButton

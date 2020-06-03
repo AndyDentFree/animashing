@@ -96,3 +96,19 @@ Images.xcassets
 ExpandedViewViewController.xib
 - use tiparrowtotoolsInv for two arrows
 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Catch taps on blurred section, to dismiss (doesn't work)
+2020-06-01
+
+PresentationController.swift
+- TransitioningDelegate
+  - add onDimmerTapped
+  - init take recognizer to pass through
+  - presentationController pass onDimmerTapped to the PresentationController
+- PresentationController  
+  - onDimmerTapped added 
+  - init change into convenience init to add param
+  - presentationTransitionWillBegin attach the tap recognizer in the completion
+  
+ShowHelpViewcontroller
+- configureTransition pass a tap recognizer to the TransitioningDelegate

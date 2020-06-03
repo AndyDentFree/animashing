@@ -8,13 +8,23 @@ import Foundation
 import UIKit
 
 class TransitioningDelegate: NSObject, UIViewControllerTransitioningDelegate {
+
+    private var onDimmerTapped: UIGestureRecognizer?
+
+    init(tapper:UIGestureRecognizer?=nil) {
+        onDimmerTapped = tapper // save to use when create presentationController
+    }
+
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return PresentationController(presentedViewController: presented, presenting: presenting)
+        return PresentationController(presentedViewController: presented, presenting: presenting, tapper: onDimmerTapped)
     }
 }
 
-// from https://stackoverflow.com/questions/54737884/changing-the-size-of-a-modal-view-controller/54738387#54738387
+// based on https://stackoverflow.com/questions/54737884/changing-the-size-of-a-modal-view-controller/54738387#54738387
+// note this is not able to handle taps so have to pass in a completed gesturerecogniser
 class PresentationController: UIPresentationController {
+    private var onDimmerTapped: UIGestureRecognizer? = nil
+
     override var frameOfPresentedViewInContainerView: CGRect {
         let bounds = presentingViewController.view.bounds
         let niceWidth = min(bounds.width, 300)
@@ -24,8 +34,8 @@ class PresentationController: UIPresentationController {
         return CGRect(origin: origin, size: size)
     }
 
-    override init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?) {
-        super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
+    convenience init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?, tapper:UIGestureRecognizer?=nil) {
+        self.init(presentedViewController: presentedViewController, presenting: presentingViewController)
 
         presentedView?.autoresizingMask = [
             .flexibleTopMargin,
@@ -35,6 +45,7 @@ class PresentationController: UIPresentationController {
         ]
 
         presentedView?.translatesAutoresizingMaskIntoConstraints = true
+        onDimmerTapped = tapper
     }
     let dimmingView: UIView = {
         let dimmingView = UIVisualEffectView(effect: UIBlurEffect(style: .extraLight))
@@ -54,10 +65,19 @@ class PresentationController: UIPresentationController {
             dimmingView.topAnchor.constraint(equalTo: superview.topAnchor)
         ])
 
-        dimmingView.alpha = 0
-        presentingViewController.transitionCoordinator?.animate(alongsideTransition: { _ in
-            self.dimmingView.alpha = 0.6
-        }, completion: nil)
+        // Note the tap recogniser on the dimmer does NOT work at present
+        dimmingView.alpha = 0.001  // thought maybe this needed to start at non-zero for tap but no apparent effect
+        if let tc = presentingViewController.transitionCoordinator {
+            tc.animate(alongsideTransition: { _ in
+                self.dimmingView.alpha = 0.6
+            }, completion: { _ in
+                // NOTE THIS DOESN'T WORK - see https://github.com/AndyDentFree/animashing/issues/1
+                if let tapToAdd = self.onDimmerTapped {
+                    self.dimmingView.isUserInteractionEnabled = true  // put the tap recogniser on in here in case needed adding AFTER animation complete
+                    self.dimmingView.addGestureRecognizer(tapToAdd)
+                }
+            })
+        }
     }
 
     override func dismissalTransitionWillBegin() {
