@@ -54,20 +54,20 @@ class MenuMockupWithArrowsViewController: UIViewController, HelpInvoker {
         add(link:HelpLink(
                 button: helpexpanderButton,
                 indicator: tipArrowToExpander,
-                msg: "expander",
-                url: "https://github.com/AndyDentFree/animashing")
+                msg: "Tap or drag the expander bar to switch between the menu Compact view and editing or playback Expanded views.",
+                url: "https://www.touchgram.com/blogs/post/meet-the-expander")
         )
         add(link:HelpLink(
                 button: helpcomposerButton,
                 indicator: tipArrowToComposer,
-                msg: "composer",
-                url: "https://github.com/AndyDentFree/animashing")
+                msg: "Composer - the main screen where you add details to the pages of the Touchgram",
+                url: "https://www.touchgram.com/blogs/post/composer")
         )
         add(link:HelpLink(
                 button: helpfavesButton,
                 indicator: tipArrowToFaves,
-                msg: "faves",
-                url: "https://github.com/AndyDentFree/animashing")
+                msg: "Faves - a list of saved favorite messages and samples.",
+                url: "https://www.touchgram.com/blogs/post/saving-faves")
         )
         add(link:HelpLink(
                 button: helpappButton,

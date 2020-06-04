@@ -55,19 +55,19 @@ class ExpandedViewViewController: UIViewController, HelpInvoker {
                 button: helpcloseButton,
                 indicator: tiparrowtocloseImageView,
                 msg: "Close button, cancels the message you have in progress but Touchgram remembers pages you've done so far.",
-                url: "https://github.com/AndyDentFree/animashing")
+                url: "https://www.touchgram.com/blogs/post/closebox")
         )
         add(link: HelpLink(
                 button: helpapppagemenuButton,
                 indicator: tipArrowToPageMenu,
-                msg: "page menu",
-                url: nil)
+                msg: "Page menu pops up when you tap here, to add pages or change the Current Page",
+                url: "https://www.touchgram.com/blogs/post/popup-page-menu")
         )
         add(link: HelpLink(
                 button: helptoolsButton,
                 indicator: tipArrowToTools,
-                msg: "tools",
-                url: nil)
+                msg: "A Tools button is on most screens, showing options that vary depending on where you are.",
+                url: "https://www.touchgram.com/blogs/post/hidden-features-on-tools")
         )
     }
 

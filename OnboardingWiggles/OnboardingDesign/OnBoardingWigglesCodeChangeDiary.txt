@@ -180,3 +180,12 @@ MenuMockupWithArrowsViewController.swift
 ExpandedViewViewController.xib
 MenuMockupWithArrowsViewController.xib
 - set all help buttons and tip arrows to initially hidden
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Adding real help links
+2020-06-04
+
+ExpandedViewViewController.swift
+MenuMockupWithArrowsViewController.swift
+ - viewDidLoad - add real URLs and help text to all the HelpLink definitions
+ 
