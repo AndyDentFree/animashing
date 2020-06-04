@@ -35,9 +35,19 @@ See the file `./OnBoardingDesign/OnBoardingWigglesCodeChangeDiary.txt` for detai
 **Important** the demo sizing only works on an iPhone Plus8 simulator. The bottom tab on the expanded background image is sized for that 5.5" phone (this **is** just a quick demo)
 
 - The demo starts with a mock screen with the Composer button below being live. 
-- Pressing Composer shows a mock expanded _document_ screen
-- Pressing the Help button for the top-right help will trigger a modal overlay of the help screen
-- The More button on the Help overlay dismisses it
+- The "app" button (Touchgram logo) on the upper right toggles Help visibility, for the purpose of this demo
+- Tapping Composer shows a mock expanded _document_ screen
+- Tapping the splitter bar in the expanded screen returns to the compact menu
+- Tapping any Help button will trigger a modal overlay of the help screen
+- The More button on the Help overlay dismisses it and launches the associated URL
+- Tapping anywhere else on the Help overlay dismisses it with no other action
+
+-------
+## Reusing this Code
+
+- The tips are all initially hidden in the xib so the state can be updated in `viewDidLoad` and they will appear at that point
+- Only animation up to right and down to left is provided at present but you can easily implement your own (I **really** recommend using Supernova Studio to generate the animation code)
+- Tip locations are mostly hardcoded in this example
 
 [AS]: https://apps.apple.com/us/app/touchgram-for-imessage/id1447336478#?platform=messages
 [TG]: https://www.touchgram.com/

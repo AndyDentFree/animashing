@@ -35,6 +35,10 @@ class MenuMockupWithArrowsViewController: UIViewController, HelpInvoker {
     // MARK: - Protocol HelpInvoker
     var morePressed: Bool = false
     var helpLinks = Dictionary<UIView, HelpLink>()
+    func animateHelpTips() {
+        [tipArrowToExpander, tipArrowToComposer, tipArrowToApp, tipArrowToFaves]
+                .forEach{animateTipArrowUpRight(of: $0)}
+    }
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
     // MARK: - Lifecycle
@@ -68,7 +72,7 @@ class MenuMockupWithArrowsViewController: UIViewController, HelpInvoker {
         add(link:HelpLink(
                 button: helpappButton,
                 indicator: tipArrowToApp,
-                msg: "app",
+                msg: "App button, for this test will cycle Help tip visibility + animation.\n\nRoses are red, violets are cyan, if you don't like my verse then you're probably cryin",
                 url: "https://github.com/AndyDentFree/animashing")
         )
     }
@@ -82,8 +86,7 @@ class MenuMockupWithArrowsViewController: UIViewController, HelpInvoker {
 
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        [tipArrowToExpander, tipArrowToComposer, tipArrowToApp, tipArrowToFaves]
-                .forEach{animateTipArrowUpRight(of: $0)}
+        updateHelpTipsAppearance()
     }
 
 
@@ -139,6 +142,10 @@ class MenuMockupWithArrowsViewController: UIViewController, HelpInvoker {
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
     // MARK: - Actions
+    @IBAction public func toggleHelpVisible(_ sender: UIButton) {
+        cycleStatus()
+    }
+
 
     @IBAction public func onComposerButtonPressed(_ sender: UIButton)  {
         let destination = ExpandedViewViewController(nibName: "ExpandedViewViewController", bundle: nil)

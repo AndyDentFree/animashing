@@ -27,7 +27,7 @@
                     </constraints>
                 </view>
                 <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compactmenu-fake-rest-iphone-8-plus" translatesAutoresizingMaskIntoConstraints="NO" id="lnj-mD-3T3">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="514"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="515"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
                 <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TW4-i3-DyY">
@@ -37,8 +37,8 @@
                             <rect key="frame" x="8" y="-4" width="70" height="67"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Favorites" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZD-FG-YOh">
-                            <rect key="frame" x="18" y="68" width="61" height="16"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZD-FG-YOh">
+                            <rect key="frame" x="18" y="67" width="61" height="17"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
                             <color key="textColor" red="0.27843138575553894" green="0.53333336114883423" blue="0.78039216995239258" alpha="1" colorSpace="calibratedRGB"/>
@@ -56,10 +56,19 @@
                         <constraint firstAttribute="trailing" secondItem="BZD-FG-YOh" secondAttribute="trailing" constant="18" id="y0A-UP-qRS"/>
                     </constraints>
                 </view>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="appbutton" translatesAutoresizingMaskIntoConstraints="NO" id="299-NW-SoG">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="299-NW-SoG" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
                     <rect key="frame" x="371" y="530" width="29" height="29"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                </imageView>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="SU2-Bn-fcy"/>
+                        <constraint firstAttribute="width" constant="29" id="r03-AM-zsl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" image="appbutton"/>
+                    <connections>
+                        <action selector="toggleHelpVisible:" destination="KkN-CV-m7f" eventType="touchUpInside" id="6Cj-H4-oNO"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0Q-iL-n9X" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
                     <rect key="frame" x="158.66666666666666" y="516" width="97" height="94"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -75,23 +84,23 @@
                         <action selector="onComposerButtonPressed:" destination="KkN-CV-m7f" eventType="touchUpInside" id="04V-zC-gGu"/>
                     </connections>
                 </button>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="ud1-oP-llQ" userLabel="tipArrowToExpander">
-                    <rect key="frame" x="159" y="511" width="40" height="40"/>
+                <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="ud1-oP-llQ" userLabel="tipArrowToExpander">
+                    <rect key="frame" x="159" y="511" width="41" height="41"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="YHS-oD-gCd" userLabel="tipArrowToApp">
+                <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="YHS-oD-gCd" userLabel="tipArrowToApp">
                     <rect key="frame" x="323" y="548" width="40" height="40"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="KMf-dG-G4p" userLabel="tipArrowToComposer">
+                <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="KMf-dG-G4p" userLabel="tipArrowToComposer">
                     <rect key="frame" x="133" y="576" width="40" height="40"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="lLo-7N-Q0L" userLabel="tipArrowToFaves">
+                <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tiparrowtotools" translatesAutoresizingMaskIntoConstraints="NO" id="lLo-7N-Q0L" userLabel="tipArrowToFaves">
                     <rect key="frame" x="133" y="658" width="40" height="40"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lf9-DI-tlA" userLabel="helpExpander" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lf9-DI-tlA" userLabel="helpExpander" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
                     <rect key="frame" x="137" y="529" width="21" height="43"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -103,7 +112,7 @@
                         <color key="titleColor" red="0.99073106050491333" green="0.18823529779911041" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifi-yG-8Ky" userLabel="helpComposer" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ifi-yG-8Ky" userLabel="helpComposer" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
                     <rect key="frame" x="111" y="591" width="21" height="43"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -115,7 +124,7 @@
                         <color key="titleColor" red="0.99073106050491333" green="0.18823529779911041" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRo-OP-dkX" userLabel="helpFaves" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRo-OP-dkX" userLabel="helpFaves" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
                     <rect key="frame" x="111" y="673" width="21" height="43"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -127,8 +136,8 @@
                         <color key="titleColor" red="0.99073106050491333" green="0.18823529779911041" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbR-Nw-7Hy" userLabel="helpApp" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
-                    <rect key="frame" x="301" y="567" width="21" height="43"/>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbR-Nw-7Hy" userLabel="helpApp" customClass="SupernovaButton" customModule="OnboardingDesign" customModuleProvider="target">
+                    <rect key="frame" x="302" y="567" width="21" height="43"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="21" id="AfK-jM-QLw"/>

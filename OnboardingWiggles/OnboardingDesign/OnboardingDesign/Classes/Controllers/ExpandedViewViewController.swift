@@ -32,6 +32,10 @@ class ExpandedViewViewController: UIViewController, HelpInvoker {
     // MARK: - Protocol HelpInvoker
     var morePressed: Bool = false
     var helpLinks = Dictionary<UIView, HelpLink>()
+    func animateHelpTips() {
+        [tiparrowtocloseImageView].forEach{animateTipArrowUpRight(of: $0)}
+        [tipArrowToPageMenu, tipArrowToTools].forEach{animateTipArrowDownLeft(of: $0)}
+    }
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
     // MARK: - Lifecycle
@@ -50,7 +54,7 @@ class ExpandedViewViewController: UIViewController, HelpInvoker {
         add(link:HelpLink(
                 button: helpcloseButton,
                 indicator: tiparrowtocloseImageView,
-                msg: "Roses are red, violets are cyan, if you don't like my verse then you're probably cryin",
+                msg: "Close button, cancels the message you have in progress but Touchgram remembers pages you've done so far.",
                 url: "https://github.com/AndyDentFree/animashing")
         )
         add(link: HelpLink(
@@ -76,9 +80,7 @@ class ExpandedViewViewController: UIViewController, HelpInvoker {
 
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        [tiparrowtocloseImageView].forEach{animateTipArrowUpRight(of: $0)}
-        [tipArrowToPageMenu, tipArrowToTools].forEach{animateTipArrowDownLeft(of: $0)}
-
+        updateHelpTipsAppearance()
     }
 
     // --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 

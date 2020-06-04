@@ -10,10 +10,12 @@ import Foundation
 import UIKit
 
 public func animateTipArrowUpRight(of toAnimate:UIView) {
+    guard HelpInvokerStatics.visibleStatus == .visibleAnimating else {return}
     animateTipArrowAngled(of:toAnimate, xValues: [ 0, -4, 8, -4, 4 ], yValues: [ 0, 4, -8, 4, -4 ])
 }
 
 public func animateTipArrowDownLeft(of toAnimate:UIView) {
+    guard HelpInvokerStatics.visibleStatus == .visibleAnimating else {return}
     animateTipArrowAngled(of:toAnimate, xValues: [ 0, 4, -8, 4, -4 ], yValues: [ 0, -4, 8, -4, 4 ])
 }
 

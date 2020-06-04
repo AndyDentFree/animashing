@@ -147,8 +147,36 @@ HelpAnimations.swift
 
 ExpandedViewViewController.swift
 - animationOne refactored out to HelpAnimations
-- viewDidLoad added to call HelpAnimations functions on all arrows
-
+- viewDidAppear added to call HelpAnimations functions on all arrows
 
 MenuMockupWithArrowsViewController.swift
-- viewDidLoad added to call HelpAnimations functions on all arrows
+- viewDidAppear added to call HelpAnimations functions on all arrows
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Add state management
+2020-06-04
+
+HelpInvoker.swift
+- updateHelpTipsAppearance added
+- HelpInvoker protocol
+  - animateHelpTips() added
+
+onboardingDesign.snproject
+- MenuMockupWithArrows
+  - appButton changed from default imageView to a button
+  
+MenuMockupWithArrowsViewController.xib
+- appButton changed to button (was image)
+
+MenuMockupWithArrowsViewController.swift
+- toggleHelpVisible added action, connected to appButton
+
+ExpandedViewViewController.swift
+MenuMockupWithArrowsViewController.swift
+- viewDidAppear
+  - help animation factored out to animateHelpTips
+  - invoke updateHelpTipsAppearance()
+
+ExpandedViewViewController.xib
+MenuMockupWithArrowsViewController.xib
+- set all help buttons and tip arrows to initially hidden
