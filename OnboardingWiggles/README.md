@@ -31,7 +31,10 @@ Animation was only designed for one image with the intent of making the code mor
 
 As you can see in the timeline, it has a diagonal movement, by adjusting X and Y to the same amount at the same time, then a _wiggle_ by rotating back and forth on the Z axis.
 
-![timeline portion of Supernova editor](./img/OnboardingWigglesDemo_AnimationTimeline.png)
+![timeline portion of Supernova editor with keyframes at the "bumps"](./img/OnboardingWigglesDemo_AnimationTimeline.png)
+
+|--------------------------------------|--------------------------------------|------------------------------------------|
+| ![Move X](./img/Keyframes_MoveX.png) | ![Move Y](./img/Keyframes_MoveY.png) | ![Rotate Z](./img/Keyframes_RotateZ.png) |
 
 ![slow motion of the animation](./img/OnboardingDesign_demo_animation_slow.gif)
 
