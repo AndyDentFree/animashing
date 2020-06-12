@@ -2,7 +2,7 @@
 
 Demo archive to accompany an article but useful in its own right. It shows a small help toolkit which can be used to provide help overlays in a standard UIKit app. 
 
-In particular, it shows off some minor animation techniques. Supernova Studio was used to generate the onboarding animation code. Then the code was refined to get to a usable onboarding toolkit. You can see the entire history in this repo starting from the design documents and the initial generated code.
+In particular, it shows off some minor animation techniques. [Supernova Studio][SS] was used to generate the onboarding animation code. Then the code was refined to get to a usable onboarding toolkit. You can see the entire history in this repo starting from the design documents and the initial generated code.
 
 ![demo](./img/OnboardingDesign_demo_animation.gif)
 
@@ -15,9 +15,10 @@ The attached design shows a small amount of the user interface for [Touchgram][T
 The roles of the splitter bar and the different screen sizes were confusing early users so some _onboarding_ was needed. However, unlike most onboarding you see in apps, it had to start confined within the _Compact Mode_ screen and couldn't take over the entire display.
 
 ## The Design
+The screen design starts with the file `onboardingDesign.sketch`.
+
 There are extra screens in there used whilst working out some design issues - I took screenshots of the current app and added annotation on top.
 
-![timeline](./img/OnboardingWigglesDemo_AnimationTimeline.png)
 
 ### Artboards used for importing into Supernova Studio
 
@@ -30,7 +31,9 @@ Animation was only designed for one image with the intent of making the code mor
 
 As you can see in the timeline, it has a diagonal movement, by adjusting X and Y to the same amount at the same time, then a _wiggle_ by rotating back and forth on the Z axis.
 
-![timeline](./img/OnboardingWigglesDemo_AnimationTimeline.png)
+![timeline portion of Supernova editor](./img/OnboardingWigglesDemo_AnimationTimeline.png)
+
+![slow motion of the animation](./img/OnboardingDesign_demo_animation_slow.gif)
 
 ## Code
 
@@ -66,3 +69,4 @@ The `img` folder contains screenshots and gifs showing the interface in action.
 [AS]: https://apps.apple.com/us/app/touchgram-for-imessage/id1447336478#?platform=messages
 [TG]: https://www.touchgram.com/
 [GB]: https://gfycat.com/gifbrewery
+[SS]: https://supernova.io/
