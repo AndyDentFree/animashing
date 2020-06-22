@@ -65,16 +65,15 @@ class PresentationController: UIPresentationController {
             dimmingView.topAnchor.constraint(equalTo: superview.topAnchor)
         ])
 
-        // Note the tap recogniser on the dimmer does NOT work at present
-        dimmingView.alpha = 0.001  // thought maybe this needed to start at non-zero for tap but no apparent effect
         if let tc = presentingViewController.transitionCoordinator {
             tc.animate(alongsideTransition: { _ in
                 self.dimmingView.alpha = 0.6
             }, completion: { _ in
-                // NOTE THIS DOESN'T WORK - see https://github.com/AndyDentFree/animashing/issues/1
-                if let tapToAdd = self.onDimmerTapped {
-                    self.dimmingView.isUserInteractionEnabled = true  // put the tap recogniser on in here in case needed adding AFTER animation complete
-                    self.dimmingView.addGestureRecognizer(tapToAdd)
+                // it is tempting to add the tapper to self.dimmingView but inspection reveals that
+                // there is a UITransitionView in front of the dimmingView which prevents gestures reaching it
+                if let tapToAdd = self.onDimmerTapped, let tappable = self.containerView {
+                    tappable.isUserInteractionEnabled = true  // put the tap recogniser on in here in case needed adding AFTER animation complete
+                    tappable.addGestureRecognizer(tapToAdd)
                 }
             })
         }

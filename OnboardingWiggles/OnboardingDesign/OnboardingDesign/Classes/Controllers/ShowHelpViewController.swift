@@ -74,6 +74,7 @@ class ShowHelpViewController: UIViewController {
         modalPresentationStyle = .custom
         modalTransitionStyle = .crossDissolve              // use whatever transition you want
         let exitOnTap = UITapGestureRecognizer(target: self, action: #selector(self.handleTapLabel(_:)))
+        exitOnTap.name = "tapTransition"  // to aid in debugging with Reveal
         customTransitioningDelegate = TransitioningDelegate(tapper: exitOnTap)
         transitioningDelegate = customTransitioningDelegate
     }

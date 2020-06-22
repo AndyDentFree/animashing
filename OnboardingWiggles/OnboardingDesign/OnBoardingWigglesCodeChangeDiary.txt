@@ -188,4 +188,11 @@ Adding real help links
 ExpandedViewViewController.swift
 MenuMockupWithArrowsViewController.swift
  - viewDidLoad - add real URLs and help text to all the HelpLink definitions
- 
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Dismiss by tapping blur - Fixes #1
+2020-06-22
+
+PresentationViewController.swift
+- presentationTransitionWillBegin 
+  - set the gesture on self.containerView (the UITransitionView) not dimmingView
